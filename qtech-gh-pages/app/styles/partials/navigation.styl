@@ -1,0 +1,68 @@
+// scroll fix
+.wrapper {
+	transform: scale(0)
+	height: 0
+}
+
+// by default
+.page-dashbord {
+	opacity 1;
+	left: 0
+	transform: scale(1)
+	height: auto
+}
+
+// target
+#home:target ~ .nav-wrapper .page-dashbord,
+#settings:target ~ .nav-wrapper .page-settings,
+#internet:target ~ .nav-wrapper .page-internet,
+#wifi:target ~ .nav-wrapper .page-wifi,
+#usb:target ~ .nav-wrapper .page-usb,
+#homelan:target ~ .nav-wrapper .page-homelan,
+#access:target ~ .nav-wrapper .page-access,
+#admin:target ~ .nav-wrapper .page-admin,
+#iptv:target ~ .nav-wrapper .page-iptv {
+	opacity: 1
+	left: 0;
+	transform: scale(1)
+	height: auto
+}
+
+// fix for default
+#settings:target ~ .nav-wrapper .page-dashbord,
+#internet:target ~ .nav-wrapper .page-dashbord,
+#wifi:target ~ .nav-wrapper .page-dashbord,
+#homelan:target ~ .nav-wrapper .page-dashbord,
+#iptv:target ~ .nav-wrapper .page-dashbord,
+#access:target ~ .nav-wrapper .page-dashbord,
+#usb:target ~ .nav-wrapper .page-dashbord,
+#admin:target ~ .nav-wrapper .page-dashbord {
+	left: -9999px
+	opacity 0
+}
+
+
+// links state
+#settings:target ~ 	.main-menu .main-menu__item_wizard a,
+#internet:target ~ .main-menu .main-menu__item_internet a,
+#wifi:target ~ .main-menu .main-menu__item_wifi a,
+#homelan:target ~ .main-menu .main-menu__item_home a,
+#iptv:target ~ .main-menu .main-menu__item_iptv a,
+#access:target ~ .main-menu .main-menu__item_access a,
+#usb:target ~ .main-menu .main-menu__item_usb a,
+#admin:target ~ .main-menu .main-menu__item_admin a {
+	background-color: #b63f55;
+}
+
+#settings:target ~ 	.main-menu .main-menu__item_wizard a,
+#internet:target ~ .main-menu .main-menu__item_internet a,
+#wifi:target ~ .main-menu .main-menu__item_wifi a,
+#homelan:target ~ .main-menu .main-menu__item_home a,
+#iptv:target ~ .main-menu .main-menu__item_iptv a,
+#access:target ~ .main-menu .main-menu__item_access a,
+#usb:target ~ .main-menu .main-menu__item_usb a,
+#admin:target ~ .main-menu .main-menu__item_admin a {
+	&:hover{
+		background: rgba(197, 101, 118, .9)
+	}
+}

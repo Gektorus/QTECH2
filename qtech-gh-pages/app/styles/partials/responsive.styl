@@ -1,0 +1,220 @@
+@media screen and (min-width: 1335px)
+	.sidemenu-copyright
+		display none
+	.main-menu__copyright-links
+		display block !important
+	.header_holder
+		width: 100%
+		text-align center
+	.header_holder__first-section
+		float left
+	.header_holder__third-section
+		float right
+		width 484px
+	.header_holder__second-section
+		float none
+		display inline-block
+		padding-left 158px
+	.header_item__connection, .header_item__frequency
+		padding-left 39px
+	.firefox, .IE
+		.header_holder__third-section
+			width 487px
+
+
+@media screen and (max-width: 1335px) {
+	.header_holder__second-section {
+		transform: translateX(110px);
+	}
+}
+
+@media screen and (min-width 1205px) and (max-width: 1280px)
+	.header_item__print
+		left: -36px;
+
+@media screen and (max-width: 1280px)
+	.tab-content_section_item
+		width: 343px
+
+@media screen and (max-width 1205px)
+	.sidemenu-upper-block {
+		width: 137px;
+	}
+
+
+	// icons replace then menu break
+	.header_holder {
+		width: 100%;
+		padding-left 0;
+		text-align: center;
+	}
+	.header_holder__first-section {
+		transform: translateX(35px);
+	}
+	.header_holder__second-section {
+		float: none;
+		display: inline-block;
+		transform: none;
+	}
+	.header_holder__third-section {
+		float right
+	}
+
+	// /icons replace then menu break
+	.main-menu__item_internet  {
+		a:before {
+			left: 55px;
+		}
+	}
+
+	.main-menu__copyright {
+		width: 138px;
+	}
+
+
+	.main-menu__item_wifi  {
+		a:before {
+			left: 54px;
+			top: 45px;
+		}
+	}
+
+	.main-menu__item_home  {
+		a:before {
+			left: 57px;
+			top: 45px;
+		}
+	}
+
+	.main-menu__item_iptv  {
+		a:before {
+			left: 54px;
+			top: 46px;
+		}
+	}
+
+	.main-menu__item_access  {
+		a:before {
+			left: 59px;
+			top: 47px;
+		}
+	}
+
+	.main-menu__item_usb  {
+		a:before {
+			top: 46px;
+			left: 59px;
+		}
+	}
+
+	.main-menu__item_admin  {
+		a:before {
+			left: 56px;
+			top: 48px;
+		}
+	}
+
+	.main-menu__item, .brand
+		border-bottom: 1px rgba(255,255,255,.1) solid;
+	.nav-wrapper
+		transform translateX(70px)
+	.fixed-header_container
+		left -193px;
+		.section-header
+			transform translateX(-62px)
+	.brand_logo {
+        padding-top: 21px;
+        padding-left: 4px;
+		&:after {
+			top: 6px;
+			right: -19px;
+			margin-top: 10px;
+			background-size: 77px;
+			background: url('../images/qtech-text2.png') no-repeat;
+		}
+
+		&:before {
+			top: 6px;
+			left: -3px;
+			width: 57px;
+			height: 57px;
+			background-size: 192px;
+		}
+	}
+	.header_item__restart,
+	.header_item__exit {
+		width: 91px;
+		padding: 0 19px;
+		span {
+			visibility hidden
+		}
+	}
+
+	.main-menu_link-name
+		display none
+	.main-menu
+		width 136.5px
+		&__content {
+			width 157px
+		}
+	.main-menu__logo:after
+		display none
+	.main-menu__logo:before
+		left: 50%
+		margin-left: -43px
+	.main-menu__copyright-links
+		top: 20px;
+		padding-left: 10px;
+		width: 170px;
+		left: 0
+		font-size 13px
+	.main-menu__copyright-year
+		padding-top 178px
+		margin-top 0
+		margin-left auto
+		margin-right auto
+		text-align center
+		width 100%
+	.copyright-year_value
+		margin-left auto
+		margin-right auto
+	.header_item__usb, .header_item__frequency, .header_item__connection,
+	.header_item__print, .header_item__date
+		margin-right 0
+
+	.header_item__usb
+		position: relative;
+		left: 28px;
+
+	.copyright_ico {
+		display block
+	}
+
+	.expanded ~ .main-menu__copyright-links {
+		position: relative;
+		top: 112px;
+	}
+
+	.main-menu__copyright-links {
+		position: relative;
+		top: 112px;
+		display none;
+	}
+	.copyright-year_value {
+		display block
+		font-weight: 300;
+		color: rgba(58, 32, 32, 0.8);
+		line-height: 19px;
+		opacity 1
+		transition opacity .5s
+
+		br {
+			display: block
+		}
+	}
+
+// @media screen and (max-width: 1080px)
+
+@media screen and (max-width: 1024px)
+	.header_holder
+		width 100%

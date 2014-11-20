@@ -1,0 +1,200 @@
+header.section-header
+	h1.section_name.section_name__dashbord Статус системы
+.content-items
+	section.content-item.content-item__settings(data-hash="settings")
+		h2.content-item_name.content-item_name__settings Мастер настройки
+			a(href="#settings" class="content-item_action content-item_action__settings")
+			a(href="javascript: void(0)" class="content-item_action content-item_action__sortable")
+		div.content-item_holder
+			span.content-item_partners
+			span.content-item_partners
+			span.content-item_partners
+	section.content-item.content-item__internet(data-hash="internet")
+		h2.content-item_name.content-item_name__internet Интернет
+			a(href="#internet" class="content-item_action content-item_action__settings")
+			a(href="javascript: void(0)" class="content-item_action content-item_action__sortable")
+		div.content-item_holder.content-item_holder__tabs
+			div.content-item_tab
+				input(type="radio" id="internet-tab_main" name="internet-tab" class="tab_radio tab_radio__main" checked)
+				label(for="internet-tab_main" class="tab_label tab_label__main") Основной
+				input(type="radio" id="internet-tab_second" name="internet-tab" class="tab_radio tab_radio__second")
+				label(for="internet-tab_second" class="tab_label tab_label__second") Резервный
+				div.tab-content_section
+					div.tab-content_section_wrapper
+						div.tab-content_section_item.tab-content_section__main
+							div.info_item Статус:
+								span.info_item_state Подключено
+							div.info_item WAN IP:
+								span.info_item_state 77.77.77.77
+							div.info_item Тип подключения:
+								span.info_item_state DHCP
+						div.tab-content_section_item.tab-content_section__second
+							div.info_item Статус:
+								span.info_item_state Отключено
+							div.info_item WAN IP:
+								span.info_item_state 11.11.11.11
+							div.info_item Тип подключения:
+								span.info_item_state DHCP
+	section.content-item.content-item__wifi(data-hash="wifi")
+		h2.content-item_name.content-item_name__wifi
+			span.section-name_holder WI-FI
+			span.content-item_state-holder
+				input(type="checkbox" id="wifi__state" class="checkbox-small" checked)
+				label(for="wifi__state" class="checkbox-small_label content-item__state flipswitch-fade")
+					span.checkbox-small_value
+					span.checkbox-small_slider
+			a(href="#wifi" class="content-item_action content-item_action__settings")
+			a(href="javascript: void(0)" class="content-item_action content-item_action__sortable")
+		div.content-item_holder.content-item_holder__tabs
+			div.content-item_tab
+				input(type="radio" id="wifi-tab_main" name="wifi-tab" class="tab_radio tab_radio__main" checked)
+				label(for="wifi-tab_main" class="tab_label tab_label__main") 2.4 Ггц
+				input(type="radio" id="wifi-tab_second" name="wifi-tab" class="tab_radio tab_radio__second")
+				label(for="wifi-tab_second" class="tab_label tab_label__second") 5 Ггц
+				div.tab-content_section
+					div.tab-content_section_wrapper
+						div.tab-content_section_item.tab-content_section__main
+							div.info_item SSID:
+								span.info_item_state VASYA_PUPKIN
+							div.info_item Шифрование:
+								span.info_item_state WPA2-PSK
+							div.info_item.info_item_select.info_item__main Канал:
+								div.info_item_state
+									.jelect.jelect__small(role="select")
+										input#main-channel.jelect-input(name="canal1" value="0" data-text="1" type="text")
+										div.jelect-current(tabindex="0" role="button") 9
+										ul.jelect-options
+											li.jelect-option.jelect-option_state_active(data-val="auto" tabindex="0" role="option") Авто
+											li.jelect-option(data-val="1" tabindex="0" role="option") 1
+											li.jelect-option(data-val="2" tabindex="0" role="option") 2
+											li.jelect-option(data-val="3" tabindex="0" role="option") 3
+											li.jelect-option(data-val="4" tabindex="0" role="option") 4
+											li.jelect-option(data-val="5" tabindex="0" role="option") 5
+											li.jelect-option(data-val="6" tabindex="0" role="option") 6
+											li.jelect-option(data-val="7" tabindex="0" role="option") 7
+											li.jelect-option(data-val="8" tabindex="0" role="option") 8
+											li.jelect-option(data-val="9" tabindex="0" role="option") 9
+
+
+						div.tab-content_section_item.tab-content_section__second
+							div.info_item SSID:
+								span.info_item_state WorldHello
+							div.info_item Шифрование:
+								span.info_item_state WPA-PSK
+							div.info_item.info_item_select.info_item__second Канал:
+								div.info_item_state
+									.jelect.jelect__small(role="select")
+										input#main-channel.jelect-input(name="canal1" value="0" data-text="1" type="text")
+										div.jelect-current(tabindex="0" role="button") Авто
+										ul.jelect-options
+											li.jelect-option.jelect-option_state_active(data-val="auto" tabindex="0" role="option") Авто
+											li.jelect-option(data-val="1" tabindex="0" role="option") 1
+											li.jelect-option(data-val="2" tabindex="0" role="option") 2
+											li.jelect-option(data-val="3" tabindex="0" role="option") 3
+											li.jelect-option(data-val="4" tabindex="0" role="option") 4
+											li.jelect-option(data-val="5" tabindex="0" role="option") 5
+											li.jelect-option(data-val="6" tabindex="0" role="option") 6
+											li.jelect-option(data-val="7" tabindex="0" role="option") 7
+											li.jelect-option(data-val="8" tabindex="0" role="option") 8
+											li.jelect-option(data-val="9" tabindex="0" role="option") 9
+	section.content-item.content-item__lan.flipping
+		a.back-btn(href="javascript: void(0)") Назад
+		div.flip-container
+			div.flip-container_main
+				h2.content-item_name.content-item_name__lan Домашняя сеть
+					span.content-item_state-holder
+					a(href="#homelan" class="content-item_action content-item_action__settings")
+					a(href="javascript: void(0)" class="content-item_action content-item_action__sortable")
+				div.content-item_holder
+					div.info_item LAN IP:
+						span.info_item_state 192.168.1.88
+					div.info_item DHCP клиентов:
+							div.info_item_state
+								.jelect.jelect__small(role="select")
+									input#main-channel.jelect-input(name="dhcp" value="4" data-text="4" type="text")
+									.jelect-current(tabindex="0" role="button") 4
+			div.flip-container_second
+				table
+					tr
+						th IP адрес
+						th MAC адрес
+						th Время жизни <br> (сек)
+					tr
+						td 192.168.1.2
+						td f8:d1:11:00:fe:5a
+						td 28656
+					tr
+						td 192.168.1.3
+						td f0:de:f1:22:14:ad
+						td 28789
+					tr
+						td 192.168.1.3
+						td f0:de:f1:22:14:ad
+						td 28789
+					tr
+						td 192.168.1.3
+						td f0:de:f1:22:14:ad
+						td 28789
+					tr
+						td 192.168.1.3
+						td f0:de:f1:22:14:ad
+						td 28789
+
+
+
+	section.content-item.content-item__iptv(data-hash="iptv")
+		h2.content-item_name.content-item_name__iptv ip-tv
+			span.content-item_state-holder
+			a(href="#iptv" class="content-item_action content-item_action__settings")
+			a(href="javascript: void(0)" class="content-item_action content-item_action__sortable")
+		div.content-item_holder
+			div.info_item Порт IPTV:
+				span.info_item_state Не назначен
+			div.info_item Порт SIP:
+				span.info_item_state Не назначен
+	section.content-item.content-item__access(data-hash="access")
+		h2.content-item_name.content-item_name__access Управление доступом
+			span.content-item_state-holder
+			a(href="#access" class="content-item_action content-item_action__settings")
+			a(href="javascript: void(0)" class="content-item_action content-item_action__sortable")
+		div.content-item_holder
+			div.info_item Firewall:
+				span.info_item_state Включен
+			div.info_item NAT:
+				span.info_item_state Выключен
+			div.info_item Родительский контроль:
+				span.info_item_state Выключен
+	section.content-item.content-item__usb(data-hash="usb")
+		h2.content-item_name.content-item_name__usb USB
+			span.content-item_state-holder
+			a(href="javascript: void(0)" class="content-item_action content-item_action__eject")
+			a(href="#usb" class="content-item_action content-item_action__settings")
+			a(href="javascript: void(0)" class="content-item_action content-item_action__sortable")
+		div.content-item_holder
+			div.info_item Принт-сервер:
+				span.info_item_state Включен
+			div.info_item USB-накопитель:
+				span.info_item_state Выключен
+			div.info_item Объем памяти:
+				span.info_item_state
+					span.progress_desc 0,356/1,5 Гб
+					span.progress_value
+						span.progress_current.value__usb
+	section.content-item.content-item__admin(data-hash="admin")
+		h2.content-item_name.content-item_name__admin Администрирование
+			span.content-item_state-holder
+			a(href="#admin" class="content-item_action content-item_action__settings")
+			a(href="javascript: void(0)" class="content-item_action content-item_action__sortable")
+		div.content-item_holder
+			div.info_item Версия ПО / Дата создания:
+				span.info_item_state 1.1.6 / 14.02.2014
+			div.info_item Загрузка CPU:
+				span.info_item_state
+					span.progress_desc 58%
+					span.progress_value
+						span.progress_current.value__cpu
+			div.info_item Загрузка RAM:
+				span.info_item_state
+					span.progress_desc 143 / 256 Мб
+					span.progress_value
+						span.progress_current.value_ram

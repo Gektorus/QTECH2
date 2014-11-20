@@ -1,0 +1,116 @@
+block head
+	- page.title = 'USB';
+include helpers/variables
+include helpers/mixins
+doctype html
+html(lang='ru')
+	include partials/head
+	body
+		.main-menu
+			.main-menu__logo
+			.main-menu__content
+				ul.main-menu__scrollable
+					li.main-menu__item.main-menu__item_wizard
+						a(href="#") Мастер настройки
+					li.main-menu__item.main-menu__item_internet
+						a(href="#") Интернет
+					li.main-menu__item.main-menu__item_wifi
+						a(href="#") Wi-Fi
+					li.main-menu__item.main-menu__item_home
+						a(href="#") Домашняя сеть
+					li.main-menu__item.main-menu__item_iptv
+						a(href="#") IP-TV
+					li.main-menu__item.main-menu__item_access
+						a(href="#") Управление доступом
+					li.main-menu__item.main-menu__item_usb.main-menu__item_selected
+						a(href="#") USB
+					li.main-menu__item.main-menu__item_admin
+						a(href="#") Администрирование
+				.main-menu__copyright
+					.main-menu__copyright-button(hidden)
+					ul.main-menu__copyright-links
+						li: a(href="#") Пользовательское соглашение
+						li: a(href="#") Официальный сайт
+						li: a(href="#") Поддержка
+						li: a(href="#") Помощь
+					p.main-menu__copyright-year 2014 © QTECH
+					p.main-menu__copyright-year2
+						| 2014
+						br
+						| © QTECH
+		.main-wrap
+			.main
+				h1.section-title-usb USB
+				section.usb-page
+						.usb-page__printer
+							section.printer-switch
+								label.printer__switch-label Сетевой принтер
+								input.checkbox-small.control(type="checkbox" checked)#printer-switch
+								label.printer__switch.checkbox-small_label(for="printer-switch")
+									span.checkbox-small_value
+									span.checkbox-small_slider
+								.help-ico
+
+						.usb-page__drive
+							section.drive-switch
+								label.drive__switch-label Сетевой накопитель
+								input.checkbox-small.control(type="checkbox" checked)#drive-switch
+								label.drive__switch.checkbox-small_label(data-switch-name="1" for="drive-switch")
+									span.checkbox-small_value
+									span.checkbox-small_slider
+								.help-ico
+
+							section.drive-memory(data-switch-section="1")
+								.drive-memory__title Объем памяти
+								.drive-memory__value 0,356 / 1,5 Гб
+								.drive-memory__bar
+
+							section.drive-buttons(data-switch-section="1")
+								a.drive-buttons__eject.button.button__ghost(href="#") ИЗВЛЕЧЬ
+								a.drive-buttons__refresh.button.button__ghost(href="#") ОБНОВИТЬ
+
+
+						.usb-page__access(data-switch-section="1")
+							section.access-switch
+								label.access__switch-label Ограничение прав доступа к сетевому накопителю
+								input.checkbox-small.control(type="checkbox" checked)#access-switch
+								label.access__switch.checkbox-small_label(for="access-switch")
+									span.checkbox-small_value
+									span.checkbox-small_slider
+								.help-ico
+								a.access-switch__delete(href="#") Удалить все
+							section.access-table
+								table
+									tr
+										th Username
+										th Password
+										th Права
+									tr
+										td Admin
+										td
+											input(type="password" value="••••••••")
+										td Read&Write
+									tr
+										td Admin
+										td
+											input(type="password" value="••••••••")
+										td Read&Write
+									tr
+										td Admin
+										td
+											input(type="password" value="••••••••")
+										td Read&Write
+									tr
+										td Admin
+										td
+											input(type="password" value="••••••••")
+										td Read&Write
+
+							section.access-add
+								a.access-add__button.button.button__ghost(href="#") ДОБАВИТЬ
+
+		include partials/header
+		include partials/footer
+		include partials/scripts
+		block scripts
+			+script(['main.js'])

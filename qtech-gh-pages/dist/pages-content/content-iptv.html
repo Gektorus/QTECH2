@@ -1,0 +1,182 @@
+<header class="section-header">
+	<h1 class="section_name section_name__iptv">IP-TV</h1><span class="section-header_buttons"><a href="#home" class="button button__action">Назад</a><a href="javascript: void(0)" class="button button__cherry">Сохранить</a></span>
+</header>
+<section class="iptv">
+	<div class="tab_section items-2">
+		<div data-tab-name="iptv-tab1" class="tab content-tabs_selected">IP-TV</div>
+		<div data-tab-name="iptv-tab2" class="tab">SIP</div>
+	</div>
+	<section data-tab="iptv-tab1" class="internet_section">
+		<div class="internet_section__wrapper">
+			<div class="internet_item internet_item__port-linking internet_item__help">
+				<a href="javascript: void(0)" data-definition-name="iptv" class="item-help"></a><span class="internet_item-name">Привязка к портам</span>
+				<input type="checkbox" id="port-linking" checked="checked" class="checkbox-small" />
+				<label for="port-linking" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+				<div class="extend-item port-linking">
+					<div class="extend-item_holder"><span class="internet_item-name">LAN 1</span>
+						<input type="checkbox" id="port-linking_lan-1" checked="checked" class="checkbox-small" />
+						<label for="port-linking_lan-1" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+						</label>
+					</div>
+					<div class="extend-item_holder"><span class="internet_item-name">LAN 2</span>
+						<input type="checkbox" id="port-linking_lan-2" checked="checked" class="checkbox-small" />
+						<label for="port-linking_lan-2" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+						</label>
+					</div>
+					<div class="extend-item_holder"><span class="internet_item-name">LAN 3</span>
+						<input type="checkbox" id="port-linking_lan-3" checked="checked" class="checkbox-small" />
+						<label for="port-linking_lan-3" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+						</label>
+					</div>
+					<div class="extend-item_holder"><span class="internet_item-name">LAN 4</span>
+						<input type="checkbox" id="port-linking_lan-4" checked="checked" class="checkbox-small" />
+						<label for="port-linking_lan-4" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="internet_item iptv-vlan"><span class="internet_item-name">VLAN</span>
+				<input type="checkbox" id="iptv-vlan" checked="checked" class="checkbox-small" />
+				<label for="iptv-vlan" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+				<div class="iptv-vlan-extend">
+					<div class="extend-item_holder"><span class="internet_item-name">VLAN ID</span>
+						<input type="text" id="iptv-vlan-id" maxlength="4" class="input-text" />
+						<label for="iptv-vlan-id" class="input-text_label">(0-4095)</label>
+					</div>
+					<div class="extend-item_holder"><span class="internet_item-name">802.1p</span>
+						<div role="select" class="jelect">
+							<input id="iptv-vlan" name="tool" value="0" data-text="0" type="text" class="jelect-input" />
+							<div tabindex="0" role="button" class="jelect-current">0</div>
+							<ul class="jelect-options">
+								<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">0</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="internet_item igmp-proxy"><span class="internet_item-name">IGMP Proxy</span>
+				<input type="checkbox" id="igmp-proxy" checked="checked" class="checkbox-small" />
+				<label for="igmp-proxy" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+			</div>
+			<div class="internet_item v-igmp-proxy"><span class="internet_item-name">Версия IGMP Proxy</span>
+				<div class="internet_item-value">
+					<div class="itempick">
+						<div class="itempick_holder items-3">
+							<input type="radio" id="v-igmp-proxy-1" name="v-igmp-proxy" checked="" class="itempick_radio" />
+							<label for="v-igmp-proxy-1" class="itempick_label"><span class="itempick_value">v1</span>
+							</label>
+							<input type="radio" id="v-igmp-proxy-2" name="v-igmp-proxy" class="itempick_radio" />
+							<label for="v-igmp-proxy-2" class="itempick_label"><span class="itempick_value">v2</span>
+							</label>
+							<input type="radio" id="v-igmp-proxy-3" name="v-igmp-proxy" class="itempick_radio" />
+							<label for="v-igmp-proxy-3" class="itempick_label"><span class="itempick_value">v3</span>
+							</label><b class="itempick_slider"></b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="internet_item igmp-snoop"><span class="internet_item-name">IGMP Snooping</span>
+				<input type="checkbox" id="igmp-snoop" checked="checked" class="checkbox-small" />
+				<label for="igmp-snoop" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+			</div>
+		</div>
+	</section>
+	<section data-tab="iptv-tab2" hidden="hidden" class="internet_section">
+		<div class="internet_section__wrapper">
+			<div class="internet_item internet_item__port-linking internet_item__help">
+				<a href="javascript: void(0)" data-definition-name="iptv" class="item-help"></a><span class="internet_item-name">Привязка к портам</span>
+				<input type="checkbox" id="sip-port-linking" checked="checked" class="checkbox-small" />
+				<label for="sip-port-linking" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+				<div class="extend-item port-linking">
+					<div class="extend-item_holder"><span class="internet_item-name">LAN 1</span>
+						<input type="checkbox" id="sip-port-linking_lan-1" checked="checked" class="checkbox-small" />
+						<label for="sip-port-linking_lan-1" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+						</label>
+					</div>
+					<div class="extend-item_holder"><span class="internet_item-name">LAN 2</span>
+						<input type="checkbox" id="sip-port-linking_lan-2" checked="checked" class="checkbox-small" />
+						<label for="sip-port-linking_lan-2" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+						</label>
+					</div>
+					<div class="extend-item_holder"><span class="internet_item-name">LAN 3</span>
+						<input type="checkbox" id="sip-port-linking_lan-3" checked="checked" class="checkbox-small" />
+						<label for="sip-port-linking_lan-3" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+						</label>
+					</div>
+					<div class="extend-item_holder"><span class="internet_item-name">LAN 4</span>
+						<input type="checkbox" id="port-linking_lan-4" checked="checked" class="checkbox-small" />
+						<label for="port-linking_lan-4" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="internet_item iptv-vlan"><span class="internet_item-name">VLAN</span>
+				<input type="checkbox" id="sip-iptv-vlan" checked="checked" class="checkbox-small" />
+				<label for="sip-iptv-vlan" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+				<div class="iptv-vlan-extend">
+					<div class="extend-item_holder"><span class="internet_item-name">VLAN ID</span>
+						<input type="text" id="sip-iptv-vlan-id" maxlength="4" class="input-text" />
+						<label for="sip-iptv-vlan-id" class="input-text_label">(0-4095)</label>
+					</div>
+					<div class="extend-item_holder"><span class="internet_item-name">802.1p</span>
+						<div role="select" class="jelect">
+							<input id="sip-iptv-vlan" name="tool" value="0" data-text="0" type="text" class="jelect-input" />
+							<div tabindex="0" role="button" class="jelect-current">0</div>
+							<ul class="jelect-options jelect-options_state_active">
+								<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">0</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+								<li data-val="1" tabindex="0" role="option" class="jelect-option">1</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="internet_item igmp-proxy"><span class="internet_item-name">IGMP Proxy</span>
+				<input type="checkbox" id="sip-igmp-proxy" checked="checked" class="checkbox-small" />
+				<label for="sip-igmp-proxy" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+			</div>
+			<div class="internet_item v-igmp-proxy"><span class="internet_item-name">Версия IGMP Proxy</span>
+				<div class="internet_item-value">
+					<div class="itempick">
+						<div class="itempick_holder items-3">
+							<input type="radio" id="sip-v-igmp-proxy-1" name="sip-v-igmp-proxy" checked="" class="itempick_radio" />
+							<label for="sip-v-igmp-proxy-1" class="itempick_label"><span class="itempick_value">v1</span>
+							</label>
+							<input type="radio" id="sip-v-igmp-proxy-2" name="sip-v-igmp-proxy" class="itempick_radio" />
+							<label for="sip-v-igmp-proxy-2" class="itempick_label"><span class="itempick_value">v2</span>
+							</label>
+							<input type="radio" id="sip-v-igmp-proxy-3" name="sip-v-igmp-proxy" class="itempick_radio" />
+							<label for="sip-v-igmp-proxy-3" class="itempick_label"><span class="itempick_value">v3</span>
+							</label><b class="itempick_slider"></b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="internet_item igmp-snoop"><span class="internet_item-name">IGMP Snooping</span>
+				<input type="checkbox" id="sip-igmp-snoop" checked="checked" class="checkbox-small" />
+				<label for="sip-igmp-snoop" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+			</div>
+		</div>
+	</section>
+</section>

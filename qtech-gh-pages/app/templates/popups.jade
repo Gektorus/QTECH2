@@ -1,0 +1,49 @@
+block head
+	- page.title = 'Popups';
+
+include helpers/variables
+include helpers/mixins
+
+html(lang='ru')
+	include partials/head
+	body
+		div.ui-item
+			div.popup_item
+				button.popup_close
+					svg(viewBox="0 0 16 16")
+						path(d="M9.207,8.5l2.768-2.768c0.195-0.195,0.195-0.512,0-0.707c-0.195-0.195-0.512-0.195-0.707,0L8.5,7.793L5.732,5.025  c-0.195-0.195-0.512-0.195-0.707,0c-0.195,0.195-0.195,0.512,0,0.707L7.793,8.5l-2.768,2.768c-0.195,0.195-0.195,0.512,0,0.707  c0.195,0.195,0.512,0.195,0.707,0L8.5,9.207l2.768,2.768c0.195,0.195,0.512,0.195,0.707,0s0.195-0.512,0-0.707L9.207,8.5z")
+				h2.popup_title Вы уверены?
+				p.popup_text Загрузка некорректной прошивки может привести к неработоспособности устройства
+				div.popup_button-set
+					button.button.button__ghost.popup_button Продолжить
+					button.button.button__ghost.popup_button Отмена
+		div.ui-item
+			div.popup_item
+				button.popup_close
+					svg(viewBox="0 0 16 16")
+						path(d="M9.207,8.5l2.768-2.768c0.195-0.195,0.195-0.512,0-0.707c-0.195-0.195-0.512-0.195-0.707,0L8.5,7.793L5.732,5.025  c-0.195-0.195-0.512-0.195-0.707,0c-0.195,0.195-0.195,0.512,0,0.707L7.793,8.5l-2.768,2.768c-0.195,0.195-0.195,0.512,0,0.707  c0.195,0.195,0.512,0.195,0.707,0L8.5,9.207l2.768,2.768c0.195,0.195,0.512,0.195,0.707,0s0.195-0.512,0-0.707L9.207,8.5z")
+				h2.popup_title Поздравляем!
+				p.popup_text Ваша прошивка обновилась. Роутер сейчас перезагрузится.
+				div.popup_button-set
+					button.button.button__ghost.popup_button Продолжить
+		div.ui-item
+			div.popup_item.popup__save
+				button.popup_close
+					svg(viewBox="0 0 16 16")
+						path(d="M9.207,8.5l2.768-2.768c0.195-0.195,0.195-0.512,0-0.707c-0.195-0.195-0.512-0.195-0.707,0L8.5,7.793L5.732,5.025  c-0.195-0.195-0.512-0.195-0.707,0c-0.195,0.195-0.195,0.512,0,0.707L7.793,8.5l-2.768,2.768c-0.195,0.195-0.195,0.512,0,0.707  c0.195,0.195,0.512,0.195,0.707,0L8.5,9.207l2.768,2.768c0.195,0.195,0.512,0.195,0.707,0s0.195-0.512,0-0.707L9.207,8.5z")
+				h2.popup_title Настройки успешно <br> сохранены
+				div.popup_button-set
+					button.button.button__ghost.popup_button Ок
+		div.ui-item
+			div.popup_item.popup_item__progress
+				button.popup_close
+					svg(viewBox="0 0 16 16")
+						path(d="M9.207,8.5l2.768-2.768c0.195-0.195,0.195-0.512,0-0.707c-0.195-0.195-0.512-0.195-0.707,0L8.5,7.793L5.732,5.025  c-0.195-0.195-0.512-0.195-0.707,0c-0.195,0.195-0.195,0.512,0,0.707L7.793,8.5l-2.768,2.768c-0.195,0.195-0.195,0.512,0,0.707  c0.195,0.195,0.512,0.195,0.707,0L8.5,9.207l2.768,2.768c0.195,0.195,0.512,0.195,0.707,0s0.195-0.512,0-0.707L9.207,8.5z")
+				h2.popup_title Обновление прошивки <br> Пожалуйста, подождите
+				div.popup_progress
+					span.popup_progress-value 58
+					div.popup_progress-meter
+						span.popup_progress-current
+		include partials/scripts
+block scripts
+	+script(['main.js'])

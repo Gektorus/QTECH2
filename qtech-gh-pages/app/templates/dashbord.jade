@@ -1,0 +1,106 @@
+block head
+	- page.title = 'Dashboard';
+
+include helpers/variables
+include helpers/mixins
+
+html(lang='ru')
+	include partials/head
+	body
+		form(name='globalform')
+			include partials/navigation-targets
+			include partials/header
+			include partials/sidemenu
+
+			div.nav-wrapper
+				div.wrapper.page-dashbord(data-fixed-header="section-header-dashboard")
+					include pages-content/content-dashbord
+				div.wrapper.page-settings(data-fixed-header="section-header-settings")
+					include pages-content/content-settings
+				div.wrapper.page-internet(data-fixed-header="section-header-internet")
+					include pages-content/content-internet
+				div.wrapper.page-wifi(data-fixed-header="section-header-wifi")
+					include pages-content/content-wifi
+				div.wrapper.page-homelan(data-fixed-header="section-header-homelan")
+					include pages-content/content-homelan
+				div.wrapper.page-iptv(data-fixed-header="section-header-iptv")
+					include pages-content/content-iptv
+				div.wrapper.page-access(data-fixed-header="section-header-access")
+					include pages-content/content-access-settings
+				div.wrapper.page-admin(data-fixed-header="section-header-admin")
+					include pages-content/content-admin
+				div.wrapper.page-usb(data-fixed-header="section-header-usb")
+					include pages-content/content-usb
+
+			.sidemenu-copyright-wrapper
+				.sidemenu-copyright
+					a(href="javascript: void(0)") Пользовательское соглашение
+					a(href="javascript: void(0)") Официальный сайт
+					a(href="javascript: void(0)") Поддержка
+					a(href="javascript: void(0)") Помощь
+
+			.popups
+				include partials/popups
+			.popup_overlay
+
+			.section-header-access(hidden)
+				header.section-header
+					h1.section_name.section_name__access-settings Управление доступом
+					span.section-header_buttons
+						a(href="#home" class="button button__action") Назад
+						a(href="javascript: void(0)" class="button button__cherry") Сохранить
+
+			.section-header-admin(hidden)
+				header.section-header
+					h1.section_name.section_name__admin Администрирование
+					span.section-header_buttons
+						a(href="#home" class="button button__action") Назад
+						a(href="javascript: void(0)" class="button button__cherry") Сохранить
+
+			.section-header-dashboard(hidden)
+				header.section-header
+					h1.section_name.section_name__dashbord Статус системы
+
+			.section-header-homelan(hidden)
+				header.section-header
+					h1.section_name.section_name__homelan Домашняя сеть
+					span.section-header_buttons
+						a(href="#home" class="button button__action") Назад
+						a(href="javascript: void(0)" class="button button__cherry") Сохранить
+
+			.section-header-internet(hidden)
+				header.section-header
+					h1.section_name.section_name__internet Интернет
+					span.section-header_buttons
+						a(href="#home" class="button button__action") Назад
+						a(href="javascript: void(0)" class="button button__cherry") Сохранить
+
+			.section-header-iptv(hidden)
+				header.section-header
+					h1.section_name.section_name__iptv IP-TV
+					span.section-header_buttons
+						a(href="#home" class="button button__action") Назад
+						a(href="javascript: void(0)" class="button button__cherry") Сохранить
+
+			.section-header-settings(hidden)
+				header.section-header
+					h1.section_name.section_name__settings Мастер настройки
+
+			.section-header-usb(hidden)
+				header.section-header
+					h1.section_name.section_name__usb USB
+					span.section-header_buttons
+						a(href="#home" class="button button__action") Назад
+						a(href="javascript: void(0)" class="button button__cherry") Сохранить
+
+			.section-header-wifi(hidden)
+				header.section-header
+					h1.section_name.section_name__wifi Wi-Fi
+					span.section-header_buttons
+						a(href="#home" class="button button__action") Назад
+						a(href="javascript: void(0)" class="button button__cherry") Сохранить
+
+			include partials/scripts
+			block scripts
+				+script(['main.js'])
+

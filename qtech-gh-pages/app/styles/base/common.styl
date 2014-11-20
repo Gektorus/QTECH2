@@ -1,0 +1,121 @@
+body
+	zoom 1
+	padding-top 20px
+	padding-bottom 20px
+	min-width 1024px
+	overflow-x auto
+	color #000
+	font-family 'Roboto', Arial, Calibri;
+	background-color #f0f0f0
+	background-image url(../images/bg.jpg)
+	cursor default
+
+	&.modal-open
+		overflow hidden
+
+	@media screen and (max-width: 540px)
+		padding-top 0
+		padding-bottom 0
+
+.main-wrap
+	width: 100%
+
+.main
+	margin 0 auto
+	font-family 'Roboto', sans-serif
+	position: relative
+	margin-top: 297px;
+	width 1090px
+	height: 1174px;
+	font-size 16px
+	right -200px
+
+	&::selection
+		background-color #ffffd0
+
+	@media screen and (max-width: 540px)
+		padding-top 40px
+		padding-bottom 40px
+		border-radius 0
+		box-shadow none
+
+.logo
+	height 180px
+	background url(../images/logo.jpg) 50% -20px no-repeat
+	margin-left -20px
+	margin-right -20px
+
+.h1
+	margin-left -20px
+	margin-right -20px
+	margin-bottom 20px
+	padding 20px
+	font-size 28px
+	font-weight bold
+	text-align center
+
+.h2
+	margin-bottom 20px
+	font-size 20px
+	font-weight bold
+	text-align center
+
+.h3
+	margin-bottom 10px
+	padding-left 20px
+	padding-right 20px
+	font-size 18px
+	font-weight bold
+
+	@media screen and (max-width: 540px)
+		text-align center
+
+.description
+	margin-bottom 40px
+	font-size 18px
+	text-align center
+
+.mark
+	padding 0 4px
+	font-weight bold
+	text-shadow 1px 1px 1px rgba(255, 255, 255, .5)
+	border-radius 4px
+	background-color #e8e8e8
+
+	&::selection
+		background-color rgba(0, 0, 0, .1)
+
+/*pp fixes*/
+
+.section-header_buttons {
+	.button__action, .button__cherry {
+		border-radius: 4px;
+		font-size: 15px;
+	}
+
+	.button__action {
+		padding-left: 26px;
+	}
+
+	.button__cherry {
+		padding-left: 10px;
+	}
+}
+
+.safari {
+	.info_item {
+		letter-spacing: -1px !important;
+	}
+
+	.header_item__exit {
+		padding-right: 20px;
+	}
+
+	.preload_item {
+		opacity: 0;
+	}
+}
+
+.firefox #fail-repeat {
+	transform: translate(118px, -55px);
+}

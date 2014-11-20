@@ -1,0 +1,359 @@
+header.section-header
+	h1.section_name.section_name__admin Администрирование
+	span.section-header_buttons
+		a(href="#home" class="button button__action") Назад
+		a(href="javascript: void(0)" class="button button__cherry") Сохранить
+section.admin
+	div.tab_section.items-2
+		.tab.content-tabs_selected(data-tab-name="admin-tab1") Система
+		.tab(data-tab-name="admin-tab2") Диагностика
+	section.admin_section(data-tab="admin-tab1")
+		.admin_section__wrapper
+			.admin_item.item__admin-password
+
+				.admin_item.admin_item__change
+					span.admin_item-name Смена пароля
+				span.admin_item-name.item__sub Введите пароль
+				input(type="password" class="input-text" placeholder="")
+
+				.admin_item.admin_item__confirm
+					span.admin_item-name.item__sub Подтвердите пароль
+					input(type="password" class="input-text" placeholder="")
+
+			.admin_item.item__admin-time
+
+				span.admin_item-name.item__admin-time-title Текущая дата
+				div.admin_item-value
+					span.admin_item-name.item__sub.admin_item__current-time 23 мая 2014 года 13:10 (GMT +04:00)
+
+				div.admin_item.admin_item__sync
+				span.admin_item-name.item__sub Синхронизировать время
+
+				div.admin_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-3")
+							input(type="radio" class="itempick_radio" id="ntp-sync" name="sync-opts" checked="")
+							label(for="ntp-sync" class="itempick_label" )
+								span(class="itempick_value") NTP
+							input(type="radio" class="itempick_radio" id="manual-sync" name="sync-opts")
+							label(for="manual-sync" class="itempick_label" )
+								span(class="itempick_value") Вручную
+							input(type="radio" class="itempick_radio" id="pc-time" name="sync-opts")
+							label(for="pc-time" class="itempick_label" )
+								span(class="itempick_value") Время ПК
+							b(class="itempick_slider")
+
+				.admin_item.admin_item-ntp-options
+					.admin_item.admin_item__timezone
+						span.admin_item-name Временная зона
+						div(class="jelect admin_item__timezone-select" role="select")
+							input(id="encryption-type" name="tool" value="0" data-text="(GMT +04:00) Moscow, St.Petersburg, Volgograd" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") (GMT +04:00) Moscow, St.Petersburg, Volgograd
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+
+					.admin_item.admin_item__ntp-server
+						span.admin_item-name Адрес NTP сервера
+						div.admin_item-value
+							input(type="text" class="input-text" value="pool.ntp.org")
+
+				.admin_item.admin_item-manual-options
+					.admin_item.admin_item__manual-date
+						span.admin_item-name Дата
+						div(class="jelect admin_item__manual-day" role="select")
+							input(id="encryption-type" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") День
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+						div(class="jelect admin_item__manual-month" role="select")
+							input(id="encryption-type" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Месяц
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+						div(class="jelect admin_item__manual-year" role="select")
+							input(id="encryption-type" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Год
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+					.admin_item.admin_item__manual-time
+						span.admin_item-name Время
+						div.admin_item-value
+							input(type="text" class="input-text" value="")
+
+			.admin_item.item__admin-export-import
+				span.admin_item-name Импорт/Экспорт <br> настроек роутера
+				button.button.button__cherry.button__admin-settings#export-settings(type="button") Экспортировать в файл
+				.admin_item.item__admin-import
+					span.admin_item-name.admin_item-name__empty
+					button.button.button__cherry.button__admin-settings#import-settings(type="button") Импортировать из файла
+			.admin_item.item__admin-update
+				span.admin_item-name Обновление <br> прошивки
+				button.button.button__cherry.button__admin-settings#update-firmware(type="button") Загрузить прошивку
+			.admin_item.item__admin-refresh
+				span.admin_item-name Восстановление <br> заводских настроек
+				button.button.button__cherry.button__admin-settings#recover(type="button") Восстановить
+
+	section.admin_section(data-tab="admin-tab2" hidden)
+		.admin_section__wrapper
+			.admin_item.admin_item__current-time-2
+				span.admin_item-name.admin_item__time-title Текущая дата
+				div.admin_item-value.admin_item__time
+					span.admin_item-name.item__sub 23 мая 2014 года 13:10 (GMT +04:00)
+				span.admin_item-name.admin_item__uptime-title Система работает
+				div.admin_item-value.admin_item__uptime
+					span.admin_item-name.item__sub 234 дня 50 часов 39 мин 43 сек
+			.admin_item.admin_time_journal
+				span.admin_item-name Журнал системы
+			.admin_item.item__admin-syslog
+				pre.
+					2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+					2011-12-20 20:45:46 [Warning] kernel:
+					2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+					2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+					2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+					2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+					2011-12-20 20:45:46 [Warning] kernel:
+					2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+					2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+					2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+					2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+					2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+					2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+					2011-12-20 20:45:46 [Warning] kernel:
+					2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+					2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+					2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+					2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+					2011-12-20 20:45:46 [Warning] kernel:
+					2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+					2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+					2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+					2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+					2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+					2011-12-20 20:45:46 [Notice] syslog: Connect: ppp100 <--> nas10_0
+					2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+					2011-12-20 20:45:46 [Warning] kernel:
+					2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+					2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+					2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+					2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+					2011-12-20 20:45:46 [Warning] kernel:
+					2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+					2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+					2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+					2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+					2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+					2011-12-20 20:45:46 [Notice] syslog: Connect: ppp100 <--> nas10_0
+
+			.admin_item.item__admin-sysjournal-btns
+					button.button.button__cherry.button__log#admin-save(type="button") Сохранить
+					button.button.button__ghost.button__log#admin-clear(type="button") Очистить
+					button.button.button__cherry.button__log#admin-refresh(type="button") Обновить
+
+		button.accordion(data-section-name="ping" type="button") Утилита Ping
+		.admin_section__wrapper.ping-settings(data-section="ping")
+
+			.admin_item
+			span.admin_item-name.item__sub IP или имя хоста
+			input(type="text" class="input-text" placeholder="" id="ping-ip")
+			label(for="ping-ip" class="input_hint input_hint__error") Неверный формат
+				span(class="help")
+					span.help_text Пример: 192.168.2.1
+
+			.admin_item.admin_item__pingqty
+				span.admin_item-name Число ping запросов
+				div.admin_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-4")
+							input(type="radio" class="itempick_radio" id="ping5" name="ping-qty" checked)
+							label(for="ping5" class="itempick_label")
+								span(class="itempick_value") 5
+							input(type="radio" class="itempick_radio" id="ping10" name="ping-qty")
+							label(for="ping10" class="itempick_label extended-show")
+								span(class="itempick_value") 10
+							input(type="radio" class="itempick_radio" id="ping15" name="ping-qty")
+							label(for="ping15" class="itempick_label extended-show")
+								span(class="itempick_value") 15
+							input(type="radio" class="itempick_radio" id="ping-infinity" name="ping-qty")
+							label(for="ping-infinity" class="itempick_label extended-show")
+								span(class="itempick_value infinity-sign")
+							b(class="itempick_slider")
+
+				.admin_item.admin_item__pingbtns
+					span.admin_item-name.admin_item-name__empty
+					button.button.button__cherry.button__log#admin-start-ping(type="button") Запустить
+					button.button.button__ghost.button__log#admin-stop-ping(type="button") Остановить
+
+				.admin_item__pinglog-wrap
+					.admin_item.item__admin-pinglog
+						pre.
+							2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+							2011-12-20 20:45:46 [Warning] kernel:
+							2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+							2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+							2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+							2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+							2011-12-20 20:45:46 [Warning] kernel:
+							2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+							2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+							2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+							2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+							2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+							2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+							2011-12-20 20:45:46 [Warning] kernel:
+							2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+							2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+							2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+							2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+							2011-12-20 20:45:46 [Warning] kernel:
+							2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+							2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+							2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+							2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+							2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+							2011-12-20 20:45:46 [Notice] syslog: Connect: ppp100 <--> nas10_0
+							2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+							2011-12-20 20:45:46 [Warning] kernel:
+							2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+							2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+							2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+							2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+							2011-12-20 20:45:46 [Warning] kernel:
+							2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+							2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+							2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+							2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+							2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+							2011-12-20 20:45:46 [Notice] syslog: Connect: ppp100 <--> nas10_0
+
+		button.accordion(data-section-name="traceroute" type="button") Утилита Traceroute
+		.admin_section__wrapper.ping-settings(data-section="traceroute")
+
+			.admin_item.admin_item__tracertip
+				span.admin_item-name.item__sub IP или имя хоста
+				input(id="tracert-ip" type="text" class="input-text" placeholder="")
+				label(for="tracert-ip" class="input_hint input_hint__error") Неверный формат
+					span(class="help")
+						span.help_text Пример: 192.168.2.1
+			.admin_item.admin_item__traceroutebtns
+				span.admin_item-name.admin_item-name__empty
+				button.button.button__cherry.button__log#admin-start-trace(type="button") Запустить
+				button.button.button__ghost.button__log#admin-stop-trace(type="button") Остановить
+
+			.admin_item__tracertlog-wrap
+				.admin_item.item__admin-tracertlog
+					pre.
+						2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+						2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+						2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+						2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+						2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+						2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+						2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+						2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+						2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+						2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+						2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+						2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+						2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+						2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+						2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+						2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+						2011-12-20 20:45:46 [Notice] syslog: Connect: ppp100 <--> nas10_0
+						2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+						2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+						2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+						2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+						2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+						2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+						2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+						2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+						2011-12-20 20:45:46 [Notice] syslog: Connect: ppp100 <--> nas10_0
+
+		button.accordion(data-section-name="netstat" type="button") Утилита Netstat
+		.admin_section__wrapper.ping-settings(data-section="netstat")
+
+			.admin_item.admin_item__netstatbtns
+				button.button.button__cherry.button__log#admin-start-netstat(type="button") Запустить
+				button.button.button__ghost.button__log#admin-stop-netstat(type="button") Остановить
+
+			.admin_item__netstatlog-wrap
+				.admin_item.item__admin-netstatlog
+					pre.
+						2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+						2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+						2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+						2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+						2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+						2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+						2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+						2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+						2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+						2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+						2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+						2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+						2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+						2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+						2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+						2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+						2011-12-20 20:45:46 [Notice] syslog: Connect: ppp100 <--> nas10_0
+						2011-12-20 20:45:46 [Informational] syslogd started: BusyBox v1.00 (2014.05.05-13:41+0000)
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: lanHost_read: add a dhcpLease entry 0 !
+						2011-12-20 20:45:46 [Warning] kernel: Checking 192.168.1.2, f8:d1:11:00:fe:5a
+						2011-12-20 20:45:46 [Warning] kernel: Opened /etc/udhcp_lease, size: 47
+						2011-12-20 20:45:46 [Warning] kernel: Got a line from DHCP log: F8:D1:11:00:FE:5A, 192.168.1.2, 96308, alexander1
+						2011-12-20 20:45:46 [Warning] kernel:
+						2011-12-20 20:45:46 [Warning] kernel: check_arpIP_mode, same ip 192.168.1.2 ,f8:d1:11:00:fe:5a in dhcp lease
+						2011-12-20 20:45:46 [Informational] syslog: LCP is allowed to come up.
+						2011-12-20 20:45:46 [Informational] syslog: PPP session is 2140771392 at nas10_0
+						2011-12-20 20:45:46 [Warning] syslog: Connected to d4:ca:6d:1d:24:41 via interface nas10_0
+						2011-12-20 20:45:46 [Informational] syslog: Using interface ppp100
+						2011-12-20 20:45:46 [Notice] syslog: Connect: ppp100 <--> nas10_0
+

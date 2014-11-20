@@ -1,0 +1,426 @@
+header.section-header
+	h1.section_name.section_name__settings Мастер настройки
+section.settings.settings_section-conntype
+	section.settings_section
+		.settings_section__wrapper
+			.settings_item.settings-wrapper-inner
+				span.settings_item-name.item__sub Мастер настройки поможет настроить роутер для подключения к сети <br> интернет. Определить тип подключения автоматически?
+			.settings_item.item__settings-section
+				input(type="radio" id="settings-auto" name="settings-conntype" checked)
+				label(for="settings-auto") Автоматическая настройка
+				input(type="radio" id="settings-manual" name="settings-conntype")
+				label(for="settings-manual") Ручная настройка
+				input(type="radio" id="settings-provider" name="settings-conntype")
+				label(for="settings-provider") Преднастройки провайдера
+
+			.settings_item.provider-select
+				div(class="jelect" role="select")
+					input(id="settings-provider-pick" name="tool" value="0" data-text="Провайдер" type="text" class="jelect-input")
+					div(class="jelect-current" tabindex="0" role="button") Провайдер
+					ul(class="jelect-options")
+						li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") Провайдер
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Провайдер 2
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Провайдер 3
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Провайдер 4
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Провайдер 5
+
+				div(class="jelect" role="select")
+					input(id="settings-division-pick" name="tool" value="0" data-text="Филиал" type="text" class="jelect-input")
+					div(class="jelect-current" tabindex="0" role="button") Филиал
+					ul(class="jelect-options")
+						li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") Филиал
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Филиал 2
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Филиал 3
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Филиал 4
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Филиал 5
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Филиал 6
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Филиал 7
+
+				div(class="jelect" role="select")
+					input(id="settings-street-pick" name="tool" value="0" data-text="Улица" type="text" class="jelect-input")
+					div(class="jelect-current" tabindex="0" role="button") Улица
+					ul(class="jelect-options")
+						li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") Улица
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Улица 2
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Улица 3
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Улица 4
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") Улица 5
+
+footer.section-footer.settings_section-conntype
+	span.section-footer_buttons
+		a#step1-prev(href="#home" class="button button__action button__prev") Назад
+		a#step1-next(href="javascript: void(0)" class="button button__cherry button__next") Далее
+
+section.settings_section.settings_section-preloader
+	.settings_section__wrapper
+		.settings_item.settings-wrapper-inner
+			span.settings_item-name.item__sub Определение типа подключения.
+			.settings_item.item__settings-section
+				.preload
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+					.preload_item
+				span.preloader-message Пожалуйста, подождите ...
+footer.section-footer.settings_section-preloader
+	span.section-footer_buttons
+		a#preloader-prev(href="javascript:void(0)" class="button button__cherry button__prev") Назад
+
+section.settings_section.settings_section-fail
+	.settings_section__wrapper
+		.settings_item.settings-wrapper-inner
+			span.settings_item-name.item__sub Определение типа подключения.
+			.settings_item.item__settings-section
+				.warning-sign
+				span.fail-message Не удалось определить <br> тип подключения
+			a#fail-repeat(href="javascript:void(0)" class="button button__ghost") Повторить
+footer.section-footer.settings_section-fail
+	span.section-footer_buttons
+		a#fail-prev(href="javascript:void(0)" class="button button__cherry button__prev") Назад
+		a#fail-manual(href="javascript: void(0)" class="button button__cherry button__next") Настроить вручную
+
+section.settings_section.settings_section-manual
+	.settings_section__wrapper
+		.settings_item.settings-wrapper-inner
+			span.settings_item-name.item__sub
+				b ШАГ 1/4
+				| Выберите тип подключения к сети интернет
+			.settings_item.item__settings-section
+				.internet_item.internet_item__connect-type
+					span.internet_item-name Тип соединения
+					div.internet_item-value
+						div(class="itempick")
+							div(class="itempick_holder items-3")
+								input(type="radio" class="itempick_radio" id="settings-manual-ethernet" name="settings-manual-interface" checked)
+								label(for="settings-manual-ethernet" class="itempick_label")
+									span(class="itempick_value") Ethernet
+								input(type="radio" class="itempick_radio" id="settings-manual-adsl" name="settings-manual-interface")
+								label(for="settings-manual-adsl" class="itempick_label")
+									span(class="itempick_value") ADSL
+								input(type="radio" class="itempick_radio" id="settings-manual-3g" name="settings-manual-interface")
+								label(for="settings-manual-3g" class="itempick_label")
+									span(class="itempick_value") 3G/4G
+								b(class="itempick_slider")
+
+				.internet_item.settings_item__connect-type__second.settings__ethernet
+					span.internet_item-name Тип подключения
+					div.internet_item-value
+						div(class="itempick")
+							div(class="itempick_holder items-4")
+								input(type="radio" class="itempick_radio" id="settings-conntype-dhcp" name="settings-conntype-manual" checked)
+								label(for="settings-conntype-dhcp" class="itempick_label")
+									span(class="itempick_value") DHCP
+								input(type="radio" class="itempick_radio" id="settings-conntype-static" name="settings-conntype-manual")
+								label(for="settings-conntype-static" class="itempick_label")
+									span(class="itempick_value") Static IP
+								input(type="radio" class="itempick_radio" id="settings-conntype-pppoe" name="settings-conntype-manual")
+								label(for="settings-conntype-pppoe" class="itempick_label")
+									span(class="itempick_value") PPPoE
+								input(type="radio" class="itempick_radio" id="settings-conntype-pptp" name="settings-conntype-manual")
+								label(for="settings-conntype-pptp" class="itempick_label")
+									span(class="itempick_value") PPtP/L2TP
+								b(class="itempick_slider")
+
+					.hidden-options.hidden-options__connect-type-internet
+						.internet_item.internet_item__static-ip
+							.internet_item
+								span.internet_item-name.sub-item IP адрес
+								.internet_item-value
+									input(type="text" class="input-text input-text__ip-mask")
+							.internet_item
+								span.internet_item-name.sub-item Маска подсети
+								.internet_item-value
+									input(type="text" class="input-text input-text__ip-mask")
+							.internet_item
+								span.internet_item-name.sub-item Основной шлюз
+								.internet_item-value
+									input(type="text" class="input-text input-text__ip-mask")
+						.internet_item.internet_item__pppoe
+							.internet_item
+								span.internet_item-name.sub-item Имя пользователя
+								.internet_item-value
+									input(type="text" class="input-text")
+							.internet_item
+								span.internet_item-name.sub-item Пароль
+								.internet_item-value
+									input(type="password" class="input-text")
+							.internet_item
+								span.internet_item-name.sub-item Имя сервиса
+								.internet_item-value
+									input(type="text" class="input-text")
+						.internet_item.internet_item__pptp
+							.internet_item
+								span.internet_item-name.sub-item Имя пользователя
+								.internet_item-value
+									input(type="text" class="input-text")
+							.internet_item
+								span.internet_item-name.sub-item Пароль
+								.internet_item-value
+									input(type="password" class="input-text")
+							.internet_item
+								span.internet_item-name.sub-item
+									span.internet_item-name__fix IP адрес / <br> Доменное имя сервера
+								.internet_item-value
+									input(type="text" class="input-text")
+
+				.internet_item.settings_item__vpi.settings__adsl
+					.internet_item
+						span.internet_item-name VPI
+						input(type="text" class="input-text" id="vpi" maxlength="3")
+						label(for="vpi" class="input-text_label" value="0") (0-255)
+					.internet_item.settings_item__vci
+						span.internet_item-name VCI
+						input(type="text" class="input-text" id="vci" maxlength="5")
+						label(for="vci" class="input-text_label" value="33") (32-65535)
+				.internet_item.settings_item__dns-mode.settings__ethernet
+					span.internet_item-name Режим DNS
+					div.internet_item-value
+						div(class="itempick")
+							div(class="itempick_holder items-2")
+								input(type="radio" class="itempick_radio" id="settings-dns-auto" name="settings-dns_mode" checked)
+								label(for="settings-dns-auto" class="itempick_label")
+									span(class="itempick_value") Авто определение
+								input(type="radio" class="itempick_radio" id="settings-dns-manual" name="settings-dns_mode")
+								label(for="settings-dns-manual" class="itempick_label")
+									span(class="itempick_value") Вручную
+								b(class="itempick_slider")
+					div.settings-dnsmode-options
+						div.internet_item.settings_item__primary-dns
+							span.internet_item-name Предпочитаемый DNS
+							div.internet_item-value
+								span(class="input-field")
+									input(type="text" class="input-text" placeholder="192.168.1.1" id="settings-primary-dns")
+						div.internet_item.settings_item__secondary-dns
+							span.internet_item-name Альтернативный DNS
+							div.internet_item-value
+								span(class="input-field")
+									input(type="text" class="input-text" id="settings-alternate-dns")
+				.internet_item.settings_item__vlan
+					span.internet_item-name VLAN
+					input(type="checkbox" id="settings-vlan-status" class="checkbox-small" checked="" maxlength="4")
+					label(for="settings-vlan-status" class="checkbox-small_label flipswitch-fade")
+						span.checkbox-small_value
+						span.checkbox-small_slider
+					div.settings-vlan-options
+						div.extend-item_holder
+							span.internet_item-name VLAN ID
+							input(type="text" class="input-text" id="settings-vlan-id" maxlength="4")
+							label(for="settings-vlan-id" class="input-text_label") (0-4095)
+
+				.settings__modem
+					.settings_item__modem
+						.usb_item.settings_item__modem-switch
+							span.usb_item-name 3G/4G модем
+							input(type="checkbox" id="modem-switch" class="checkbox-small" checked)
+							label(for="modem-switch" class="checkbox-small_label flipswitch-fade")
+								span.checkbox-small_value
+								span.checkbox-small_slider
+
+						.usb_item.settings_item__modem-buttons
+							span.settings_item-name.settings_item-name__empty
+							button(type="button" class="button button__ghost button__eject") Извлечь
+							button(type="button" class="button button__ghost button__refresh") Обновить
+					.internet_item.usb-model
+						span.internet_item-name.item__sub Модель USB-адаптера
+						div.internet_item-value
+							div(class="jelect" role="select")
+								input(id="settings-usb-model" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+								div(class="jelect-current" tabindex="0" role="button") Выберите
+								ul(class="jelect-options")
+									li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+					.internet_item.settings-location
+						span.internet_item-name.item__sub Ваше местоположение
+						div.internet_item-value
+							div(class="jelect" role="select")
+								input(id="settings-location" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+								div(class="jelect-current" tabindex="0" role="button") Выберите
+								ul(class="jelect-options")
+									li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+					.internet_item.settings-operator
+						span.internet_item-name.item__sub Оператор
+						div.internet_item-value
+							div(class="jelect" role="select")
+								input(id="settings-operator" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+								div(class="jelect-current" tabindex="0" role="button") Выберите
+								ul(class="jelect-options")
+									li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+					.internet_item.item__settings-network
+						.internet_item-name.item__sub Сеть
+						.internet_item-value.internet_item__help
+							div(class="itempick")
+								div(class="itempick_holder items-3")
+									input(type="radio" class="itempick_radio" id="settings-network-auto" name="settings-network" checked)
+									label(for="settings-network-auto" class="itempick_label")
+										span(class="itempick_value") Auto
+									input(type="radio" class="itempick_radio" id="settings-network-3g" name="settings-network")
+									label(for="settings-network-3g" class="itempick_label")
+										span(class="itempick_value") 3G
+									input(type="radio" class="itempick_radio" id="settings-network-4g" name="settings-network")
+									label(for="settings-network-4g" class="itempick_label")
+										span(class="itempick_value") 4G
+									b(class="itempick_slider")
+					.internet_item.item__settings-apn
+						span.internet_item-name.item__sub APN
+						input(type="text" class="input-text" placeholder="")
+					.internet_item.item__settings-dial
+						span.internet_item-name.item__sub Dial number
+						input(type="text" class="input-text" placeholder="")
+					.internet_item.item__settings-pin
+						span.internet_item-name.item__sub PIN код
+						input(type="text" class="input-text" placeholder="")
+					.internet_item.item__settings-username
+						span.internet_item-name.item__sub Имя пользователя
+						input(type="text" class="input-text" placeholder="")
+					.internet_item.item__settings-password
+						span.internet_item-name.item__sub Пароль
+						input(type="password" class="input-text" placeholder="")
+
+footer.section-footer.settings_section-manual
+	span.section-footer_buttons
+		a#manual-prev(href="javascript:void(0)" class="button button__cherry button__prev") Назад
+		a#manual-next(href="javascript: void(0)" class="button button__cherry button__next") Далее
+
+section.settings_section.settings_section-wifi
+	.settings_section__wrapper
+		.settings_item.settings-wrapper-inner
+			span.settings_item-name.item__sub
+				b ШАГ 2/4
+				| Беспроводная сеть Wi-Fi
+			.settings_item.item__settings-section
+				.internet_item.internet_item__connect-type
+					span.internet_item-name Частота
+					div.internet_item-value.internet_item__help
+						div(class="itempick")
+							div(class="itempick_holder items-2")
+								input(type="radio" class="itempick_radio" id="settings-frequency5" name="settings-frequency" checked)
+								label(for="settings-frequency5" class="itempick_label")
+									span(class="itempick_value") 5ГГц
+								input(type="radio" class="itempick_radio" id="settings-frequency24" name="settings-frequency")
+								label(for="settings-frequency24" class="itempick_label")
+									span(class="itempick_value") 2,4 ГГц
+								b(class="itempick_slider")
+						a(href="javascript: void(0)" data-definition-name="iptv").item-help
+				.internet_item.item__settings-ssid
+					span.internet_item-name.item__sub Имя сети (SSID)
+					input(type="text" class="input-text" spellcheck="false" value="Qnity 4000")
+				.internet_item.access-settings
+					span.internet_item-name Доступ к сети
+					div.internet_item-value.internet_item__help
+						div(class="itempick").settings-wifi-access
+							div(class="itempick_holder items-2")
+								input(type="radio" class="itempick_radio" id="settings-wifi-open" name="settings-wifi-access" checked="")
+								label(for="settings-wifi-open" class="itempick_label")
+									span(class="itempick_value") Открытая сеть
+								input(type="radio" class="itempick_radio" id="settings-wifi-closed" name="settings-wifi-access")
+								label(for="settings-wifi-closed" class="itempick_label")
+									span(class="itempick_value") Закрытая сеть
+								b(class="itempick_slider")
+						a(href="javascript: void(0)" data-definition-name="iptv").item-help
+					div.settings-wifi-options
+						div.extend-item_holder
+							span.internet_item-name Тип шифрования
+							div(class="jelect" role="select")
+								input(id="encryption-type" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+								div(class="jelect-current" tabindex="0" role="button") Выберите
+								ul(class="jelect-options")
+									li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") WPA-PSK
+									li(class="jelect-option" data-val="1" tabindex="0" role="option") WPA2-PSK
+						div.extend-item_holder
+							span.internet_item-name Пароль
+							div.internet_item-value
+								input(type="password" class="input-text")
+
+footer.section-footer.settings_section-wifi
+	span.section-footer_buttons
+		a#wifi-prev(href="javascript:void(0)" class="button button__cherry button__prev") Назад
+		a#wifi-next(href="javascript: void(0)" class="button button__cherry button__next") Далее
+
+section.settings_section.settings_section-timezone
+	.settings_section__wrapper
+		.settings_item.settings-wrapper-inner
+			span.settings_item-name.item__sub
+				b ШАГ 3/4
+				| Выберите ваш часовой пояс
+			.settings_item.item__settings-section.timezone-jelect
+				span.internet_item-name Часовой пояс
+				div(class="jelect" role="select")
+					input(id="provider-pick" name="tool" value="0" data-text="" type="text" class="jelect-input")
+					div(class="jelect-current" tabindex="0" role="button") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+					ul(class="jelect-options")
+						li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") (GMT+04:00) Москва, Санкт-Петербург, Волгоград
+
+footer.section-footer.settings_section-timezone
+	span.section-footer_buttons
+		a#timezone-prev(href="javascript:void(0)" class="button button__cherry button__prev") Назад
+		a#timezone-next(href="javascript: void(0)" class="button button__cherry button__next") Далее
+
+section.settings_section.settings_section-password
+	.settings_section__wrapper
+		.settings_item.settings-wrapper-inner
+			span.settings_item-name.item__sub
+				b ШАГ 4/4
+				| Установка пароля
+			.settings_item.item__settings-section
+				span.internet_item-name.settings-password-default Использовать <br> пароль по умолчанию
+				input(type="checkbox" id="settings-default-password" class="checkbox-small" checked="")
+				label(for="settings-default-password" class="checkbox-small_label flipswitch-fade")
+					span.checkbox-small_value
+					span.checkbox-small_slider
+				div.settings-password__inputs
+					div.settings-password-input
+						span.internet_item-name Старый пароль
+						input(type="password" class="input-text")
+						span.settings-password-warning.
+							Для предотвращения несанкционированного доступа на ваше устройство рекомендуется сменить пароль по умолчанию.
+					div.settings-password-input
+						span.internet_item-name Новый пароль
+						input(type="password" class="input-text")
+					div.settings-password-input
+						span.internet_item-name Подтвердите <br> новый пароль
+						input(type="password" class="input-text")
+
+
+footer.section-footer.settings_section-password
+	span.section-footer_buttons
+		a#password-prev(href="javascript:void(0)" class="button button__cherry button__prev") Назад
+		a#password-next(href="javascript: void(0)" class="button button__cherry button__next") Завершить

@@ -1,0 +1,332 @@
+header.section-header
+	h1.section_name.section_name__homelan Домашняя сеть
+	span.section-header_buttons
+		a(href="#home" class="button button__action") Назад
+		a(href="javascript: void(0)" class="button button__cherry") Сохранить
+section.homelan
+	div.tab_section.items-2
+		.tab.content-tabs_selected(data-tab-name="homelan-tab1") IPv4
+		.tab(data-tab-name="homelan-tab2") IPv6
+	section.homelan_section(data-tab="homelan-tab1")
+		.homelan_section__wrapper
+			div.homelan_item.homelan_item__address
+				div.homelan_item.homelan_item__ipaddress
+					span.homelan_item-name IP-адрес
+					div.homelan_item-value
+						span(class="input-field")
+							input(type="text" class="input-text input-text__ip-mask" placeholder="" id="homelan-ip")
+				div.homelan_item.homelan_item__mask
+					span.homelan_item-name Маска подсети
+					div.homelan_item-value
+						span(class="input-field")
+							input(type="text" class="input-text input-text__ip-mask" placeholder="" id="homelan-mask")
+			.homelan_item.homelan_item__dhcp
+				span.homelan_item-name.homelan_item-title DHCP
+				div.homelan_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-3")
+							input(type="radio" class="itempick_radio" id="dhcp-off" name="homelan-dhcp" checked="")
+							label(for="dhcp-off" class="itempick_label")
+								span(class="itempick_value") Выкл
+							input(type="radio" class="itempick_radio" id="dhcp-server" name="homelan-dhcp")
+							label(for="dhcp-server" class="itempick_label")
+								span(class="itempick_value") Сервер
+							input(type="radio" class="itempick_radio" id="dhcp-relay" name="homelan-dhcp")
+							label(for="dhcp-relay" class="itempick_label")
+								span(class="itempick_value") Relay
+							b(class="itempick_slider")
+
+				.homelan-dhcp-options
+					div.homelan_item.homelan_item__address-start
+						span.homelan_item-name Начальный IP адрес
+						div.homelan_item-value
+							span(class="input-field")
+								input(type="text" class="input-text " placeholder="" id="ip-start")
+					div.homelan_item.homelan_item__address-end
+						span.homelan_item-name Конечный IP адрес
+						div.homelan_item-value
+							span(class="input-field")
+								input(type="text" class="input-text " placeholder="" id="ip-end")
+					div.homelan_item.homelan_item__rent-time
+							span.homelan_item-name Время аренды
+							div.homelan_item-value
+								span(class="input-field")
+									input(type="text" class="input-text " placeholder="" id="ip-rent-time" maxlength="6")
+									label(for="primary-dns" class="input-text_label") (0 - 259200)
+									a.item-help(href="javascript:void(0)" data-definition-name="iptv")
+						div.homelan_item.homelan_item__domain
+							span.homelan_item-name Доменное имя
+							div.homelan_item-value
+								span(class="input-field")
+									input(type="text" class="input-text " placeholder="" id="ip-domain")
+
+				.homelan-dhcp-options-relay
+					div.homelan_item.homelan_item__server-ip-address
+						span.homelan_item-name IP адрес сервера
+						div.homelan_item-value
+							span(class="input-field")
+								input(type="text" class="input-text " placeholder="" id="homelan-server-ip")
+
+			.homelan_item
+				.homelan_item.homelan_item__reserve
+					span.homelan_item-name Резервирование <br> DHCP адресов
+					input(type="checkbox" id="dhcp-reserve" class="checkbox-small" checked)
+					label(for="dhcp-reserve" class="checkbox-small_label flipswitch-fade")
+						span.checkbox-small_value
+						span.checkbox-small_slider
+					a.homelan_item__reserve-delete(href="javascript:void(0)") Удалить все
+					a.item-help(href="javascript:void(0)" data-definition-name="iptv")
+
+					.homelan_item
+						table.template-table(hidden)
+							tr
+								td
+									input.input-text__ip-mask(type="text" value="")
+								td
+									input.input-text__ip-mask(type="text" value="")
+								td
+									input(type="text" value="")
+									a(href="javascript: void(0)" class="delete-item")
+
+						table.reserve-table
+							tr
+								th IP адрес
+								th MAC адрес
+								th Имя компьютера
+							tr
+								td
+									input.input-text__ip-mask(type="text" value="192 . 168 . 0 . 1")
+								td
+									input.input-text__ip-mask(type="text" value="192 . 168 . 0 . 1")
+								td
+									input(type="text" value="daddy")
+									a(href="javascript: void(0)" class="delete-item")
+							tr
+								td
+									input.input-text__ip-mask(type="text" value="192 . 168 . 0 . 1")
+								td
+									input.input-text__ip-mask(type="text" value="192 . 168 . 0 . 1")
+								td
+									input(type="text" value="daddy")
+									a(href="javascript: void(0)" class="delete-item")
+							tr
+								td
+									input.input-text__ip-mask(type="text" value="192 . 168 . 0 . 1")
+								td
+									input.input-text__ip-mask(type="text" value="192 . 168 . 0 . 1")
+								td
+									input(type="text" value="daddy")
+									a(href="javascript: void(0)" class="delete-item")
+							tr
+								td
+									input.input-text__ip-mask(type="text" value="192 . 168 . 0 . 1")
+								td
+									input.input-text__ip-mask(type="text" value="192 . 168 . 0 . 1")
+								td
+									input(type="text" value="daddy")
+									a(href="javascript: void(0)" class="delete-item")
+
+					.homelan_item
+						span.homelan_item-name.homelan_item-name__empty
+						button(type="button" class="button button__ghost button__add-address") Добавить
+
+
+		button.accordion(data-section-name="advanced-settings" type="button") Профессиональные настройки
+		.homelan_section__wrapper.advanced-settings(data-section="advanced-settings")
+			.homelan_item.homelan_item__alias-ip
+				span.homelan_item-name Alias LAN IP
+				div.homelan_item-value
+					span(class="input-field")
+						input(type="text" class="input-text " placeholder="" id="alias-ip")
+			.homelan_item.homelan_item__alias-mask
+				span.homelan_item-name Alias маска подсети
+				div.homelan_item-value
+					span(class="input-field")
+						input(type="text" class="input-text " placeholder="" id="alias-mask")
+
+			.homelan_item.homelan_item__dnsrelay
+				span.homelan_item-name.homelan_item-title DNS Relay
+				div.homelan_item-value.homelan_item__help
+					div(class="itempick")
+						div(class="itempick_holder items-2")
+							input(type="radio" class="itempick_radio" id="dns-relay-auto" name="dns-relay" checked)
+							label(for="dns-relay-auto" class="itempick_label")
+								span(class="itempick_value") Автоматически
+							input(type="radio" class="itempick_radio" id="dns-relay-manual" name="dns-relay")
+							label(for="dns-relay-manual" class="itempick_label extended-show")
+								span(class="itempick_value") Вручную
+							b(class="itempick_slider")
+					a.item-help(href="javascript:void(0)" data-definition-name="iptv")
+				.homelan-dnsrelay-options
+					.homelan_item.homelan_item__primary-dns
+						span.homelan_item-name Предпочитаемый DNS
+						div.homelan_item-value
+							span(class="input-field")
+								input(type="text" class="input-text " placeholder="" id="homelan-primary-dns")
+					.homelan_item.homelan_item__secondary-dns
+						span.homelan_item-name Альтернативный DNS
+						div.homelan_item-value
+							span(class="input-field")
+								input(type="text" class="input-text " placeholder="" id="homelan-secondary-dns")
+				.homelan_item.homelan_item__lans
+					.homelan_item.homelan_item__lan
+						span.homelan_item-name LAN 1
+						div(class="jelect" role="select")
+							input(id="lan1" name="lan1" value="0" data-text="Выберите провайдера" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Авто
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 0
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") Авто
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+					.homelan_item.homelan_item__lan
+						span.homelan_item-name LAN 2
+						div(class="jelect" role="select")
+							input(id="lan2" name="lan2" value="0" data-text="Выберите провайдера" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Авто
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 0
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") Авто
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+					.homelan_item.homelan_item__lan
+						span.homelan_item-name LAN 3
+						div(class="jelect" role="select")
+							input(id="lan3" name="lan3" value="0" data-text="Выберите провайдера" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Авто
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 0
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") Авто
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+					.homelan_item.homelan_item__lan
+						span.homelan_item-name LAN 4
+						div(class="jelect" role="select")
+							input(id="lan4" name="lan4" value="0" data-text="Выберите провайдера" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Авто
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 0
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") Авто
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+
+
+section.homelan_section(data-tab="homelan-tab2" hidden)
+	.homelan_section__wrapper
+		div.homelan_item.homelan_item__globalipv6
+			span.homelan_item-name Глобальный IPv6 адрес
+			input(type="text" class="input-text" id="global-ipv6")
+		div.homelan_item.homelan_item__radvd
+			span.homelan_item-name Radvd
+			input(type="checkbox" id="radvd" class="checkbox-small" checked="")
+			label(for="radvd" class="checkbox-small_label flipswitch-fade")
+				span.checkbox-small_value
+				span.checkbox-small_slider
+		.homelan_item.homelan_item__radvdmode
+			span.homelan_item-name Режим Radvd
+			div.homelan_item-value
+				div(class="itempick")
+					div(class="itempick_holder items-2")
+						input(type="radio" class="itempick_radio" id="radvd-auto" name="radvd-mode" checked)
+						label(for="radvd-auto" class="itempick_label")
+							span(class="itempick_value") Автоматически
+						input(type="radio" class="itempick_radio" id="radvd-manual" name="radvd-mode")
+						label(for="radvd-manual" class="itempick_label")
+							span(class="itempick_value") Вручную
+						b(class="itempick_slider")
+			.homelan-radvd-options
+				div.homelan_item.homelan_item__prefix
+					span.homelan_item-name Префикс/Длина
+					input(type="text" class="input-text" id="radprefix")
+					label(for="radprefix" class="input-text_label prefix-label") /
+					input(type="text" class="input-text prefix")
+				div.homelan_item.homelan_item__ttl
+					span.homelan_item-name Предпочитаемое время жизни
+					input(type="text" class="input-text" id="radvd-ttl")
+				div.homelan_item.homelan_item__realtime
+					span.homelan_item-name Действительное время жизни
+					input(type="text" class="input-text" id="radvd-realtime")
+
+		.homelan_item.homelan_item__dhcpv6-switch
+			span.homelan_item-name DHCPv6
+			input(type="checkbox" id="homelan-dhcpv6" class="checkbox-small" checked="")
+			label(for="homelan-dhcpv6" class="checkbox-small_label flipswitch-fade")
+				span.checkbox-small_value
+				span.checkbox-small_slider
+
+		.homelan_item.homelan_item__dhcpv6-mode
+			span.homelan_item-name Режим DHCPv6
+			div.homelan_item-value
+				div(class="itempick")
+					div(class="itempick_holder items-2")
+						input(type="radio" class="itempick_radio" id="homelan-dhcpv6-auto" name="dhcpv6-mode" checked="")
+						label(for="homelan-dhcpv6-auto" class="itempick_label")
+							span(class="itempick_value") Автоматически
+						input(type="radio" class="itempick_radio" id="homelan-dhcpv6-manual" name="dhcpv6-mode")
+						label(for="homelan-dhcpv6-manual" class="itempick_label extended-show")
+							span(class="itempick_value") Вручную
+						b(class="itempick_slider")
+			.homelan-dhcpv6-options
+				div.homelan_item.homelan_item__prefix
+					span.homelan_item-name Префикс/Длина
+					input(type="text" class="input-text" id="dhcp-prefix")
+					label(for="dhcp-prefix" class="input-text_label prefix-label") /
+					input(type="text" class="input-text prefix" id="dhcp-prefix-length")
+				div.homelan_item.homelan_item__ttl
+					span.homelan_item-name Предпочитаемое время жизни
+					input(type="text" class="input-text" id="homelan-dhcpv6-ttl")
+				div.homelan_item.homelan_item__realtime
+					span.homelan_item-name Действительное время жизни
+					input(type="text" class="input-text" id="homelan-dhcpv6-realtime")
+				div.homelan_item.homelan_item__primary-dns
+					span.homelan_item-name Предпочитаемый DNS
+					input(type="text" class="input-text" id="homelan-dhcpv6-dns")
+				div.homelan_item.homelan_item__secondary-dns
+					span.homelan_item-name Альтернативный DNS
+					input(type="text" class="input-text" id="homelan-dhcpv6-dns2")
+
+	button.accordion(data-section-name="advanced-settings2" type="button") Профессиональные настройки
+	.homelan_section__wrapper.authentication(data-section="advanced-settings2")
+		.homelan_item.homelan_item__tunnel
+			span.homelan_item-name.homelan_item-title Туннель 6RD
+			input(type="checkbox" id="tunnel" class="checkbox-small" checked="")
+			label(for="tunnel" class="checkbox-small_label flipswitch-fade")
+				span.checkbox-small_value
+				span.checkbox-small_slider
+			.homelan-tunnel-options
+				div.homelan_item.homelan_item__rdprefix
+					span.homelan_item-name 6RD IPv6 префикс
+					input(type="text" class="input-text" id="tunnel-prefix")
+					label(for="tunnel-prefix" class="input-text_label prefix-label") /
+					input(type="text" class="input-text prefix" id="tunnel-prefix-length")
+				div.homelan_item.homelan_item__ipv4address
+					span.homelan_item-name IPv4 адрес
+					input(type="text" class="input-text" id="tunnel-ipv4")
+				div.homelan_item.homelan_item__ipv6mask
+					span.homelan_item-name Маска IPv6 адреса
+					input(type="text" class="input-text" id="tunnel-ipv6")
+				div.homelan_item.homelan_item__border-relay
+					span.homelan_item-name 6RD Border Relay IPv4 адреса
+					input(type="text" class="input-text" id="tunnel-relay")
+				div.homelan_item.homelan_item__delegation
+					span.homelan_item-name 6RD Prefix Delegation
+					input(type="text" class="input-text" id="tunnel-delegation")
+

@@ -1,0 +1,1609 @@
+.fixed-header_container {
+	.section_name__access-settings {
+		&:after {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -32px;
+			width: 76px;
+			height: 90px;
+			content: '';
+			background: url('../images/access-section-logo.png') 8px 15px no-repeat;
+			background-size: 24px;
+		}
+	}
+}
+
+.section_name.section_name__access-settings {
+	float: left;
+	padding-left: 54px;
+	letter-spacing: -1.1px;
+}
+
+.item__access-vpn {
+	padding-top: 25px;
+	border-top: 1px solid #c9b8b9;
+	border-bottom: 1px solid #c9b8b9;
+	margin-bottom: 25px;
+}
+
+.access-lan-settings {
+	.itempick__small {
+		margin-right: 7px;
+		float: left;
+	}
+	.internet_item {
+		padding-bottom 7px;
+	}
+}
+
+.internet_item-name.lan-access-settings {
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+.filter-activity-status {
+	margin-top 28px;
+	&.internet_item {
+		padding-bottom: 20px;
+	}
+}
+
+.access-table.access-table__filter-activity,
+.access-table.nat-ports {
+	border-collapse: separate;
+	margin-top: 0;
+
+	td:first-child {
+		overflow: hidden;
+	}
+
+	tr td:nth-child(1) {
+		padding-left 0;
+	}
+
+	tr td:nth-child(3) {
+		padding-left 0;
+		input {
+			width: 190px;
+			letter-spacing 0
+		}
+	}
+
+	.table-jelect {
+		width: 209px;
+		height: 34px;
+		border-width: 1px;
+
+		&:hover {
+			.jelect-current {
+				border-color: #91767b;
+				box-shadow: 0 0 1px #91767b;
+
+				&:after {
+					opacity 1;
+				}
+			}
+		}
+
+		.jelect-current {
+			font-size: 15px;
+			line-height 39px;
+			padding: 0 39px 0 25px;
+			border-color: transparent;
+			box-shadow: none;
+			transition box-shadow .4s, border-color .4s;
+			&:after {
+				width: 35px;
+				bottom: 0
+				background-size: 12px 8px;
+				opacity: 0;
+				transition: opacity .4s;
+			}
+		}
+
+		.jelect-option {
+			font-size: 15px;
+			line-height 40px;
+			height: 39px;
+		}
+
+		.jelect_state_active {
+			border-color: #91767b;
+			box-shadow: 0 0 1px #91767b;
+
+			&:after {
+				opacity 1;
+			}
+		}
+	}
+
+	.jelect-td {
+		padding: 0
+	}
+
+	&.access-table th:nth-of-type(1)
+	&.access-table th:nth-of-type(2) {
+		width: 211px;
+	}
+
+	td {
+		position: relative;
+	}
+
+	.delete-item {
+		position absolute;
+		right: 15px;
+		top: 50%;
+		margin-top: -10px;
+		width: 15px;
+		height: 20px;
+		background: url(../images/trash.png) no-repeat;
+		background-size cover;
+		opacity 0;
+		transition opacity .2s;
+	}
+
+	tr td {
+		border-top: 1px solid transparent;
+		transition border-color .4s;
+	}
+
+	tr:hover:not(.table-header) {
+		box-shadow: 0 0 1px #b63f56;
+		td {
+			border-top-color: #b63f56;
+			border-bottom-color: #b63f56;
+			&:last-child {
+				border-right-color: #b63f56;
+			}
+			&:first-child {
+				border-left-color: #b63f56;
+			}
+
+			.delete-item {
+				opacity 1;
+			}
+		}
+	}
+
+
+}
+
+.access-table.nat-ports {
+	td:nth-child(2) {
+		overflow: hidden
+	}
+
+.jelect-current {
+		line-height: 33px;
+		padding-left: 26px;
+	}
+}
+
+
+.button.button__add-filter {
+	float right;
+	margin-top: 25px;
+}
+
+.button_remove-filters {
+	float right
+	padding-top: 8px;
+	box-shadow none;
+}
+
+.access-table.filter__mac {
+	td:first-child {
+		padding: 0
+		height: 30px;
+		width: 235px;
+	}
+	td:nth-child(2) {
+		width: 445px;
+		input {
+			width: 400px;
+			padding-left 27px;
+			left: 0
+			letter-spacing: normal
+		}
+	}
+	tr td:nth-child(1) {
+		padding-left: 0
+	}
+	input {
+		width: 235px;
+		height: 100%;
+		left: 0
+		padding-left 27px;
+	}
+}
+
+.nat-ports-item {
+	overflow hidden
+}
+
+.item-dmz-status {
+	margin-top: 40px;
+	border-top: 1px solid #cbb9bb;
+}
+
+.internet_item-name {
+	min-height: 3px;
+}
+
+.physical_lan {
+	margin-top: 6px;
+	&:first-child {
+		margin-top 0;
+	}
+	&:last-child {
+		margin-left: 250px;
+		margin-top: 3px;
+	}
+}
+
+.button__rule {
+	width: 306px;
+	height: 49px;
+	display: inline-block;
+}
+
+.input__separator {
+	line-height 37px;
+	&:after {
+		content: ''
+		height: 1px;
+		width: 8px;
+		transform: translate(2px, -3px);
+		display: inline-block;
+		background-color: #998388;
+		box-shadow: 0 0 1px #998388;
+	}
+}
+
+.internet_item.jelect-set {
+	.jelect {
+		width: 210px;
+	}
+	.input__separator {
+		&:after {
+			transform: translate(2px, 6px);
+		}
+	}
+}
+
+.item-name__cherry {
+	display inline-block
+	font-size: 20px;
+	color: #b63f56;
+	font-family: 'Roboto'
+	font-weight: 300;
+	transform: translateY(7px);
+	margin-bottom 5px;
+}
+
+.item-set .internet_item {
+	padding-bottom 6px
+}
+
+.button__rule {
+	margin: 9px 0 22px;
+}
+
+.item-separator {
+	padding-top 29px;
+	border-top: 1px solid #c9b8b9;
+}
+
+.access-table.nat-ports {
+	height 210px;
+
+	.jspHorizontalBar {
+		bottom 20px;
+	}
+
+	input {
+		width: 177px
+		letter-spacing 0.2px
+	}
+
+	td {
+		padding-bottom: 6px
+	}
+
+	.table-jelect {
+		width: 145px
+	}
+
+	tr td:nth-child(3) input {
+		width: 146px;
+	}
+
+	.jspContainer {
+		/*height: 199px !important*/
+		height: 312px
+	}
+
+}
+
+.page-access {
+	.section_name__access-settings {
+		float: left;
+		&:after {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -32px;
+			width: 76px;
+			height: 90px;
+			content: '';
+			background: url('../images/access-section-logo.png') 8px 15px no-repeat;
+			background-size: 24px;
+		}
+	}
+
+
+ .jspContainer
+ {
+  overflow: hidden;
+  position: relative;
+ }
+ .jspDrag
+ {
+  width: 8px
+  -webkit-border-radius: 25px
+  -moz-border-radius: 25px
+  border-radius: 27px
+  background #8A6C73
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+ }
+
+ .jspPane
+ {
+  position: absolute;
+ }
+
+ .jspVerticalBar
+ {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+ }
+
+ .jspHorizontalBar
+ {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+ }
+
+ .jspCap
+ {
+  display: none;
+ }
+
+ .jspHorizontalBar .jspCap
+ {
+  float: left;
+ }
+
+ .jspTrack
+ {
+  position: relative;
+ }
+
+ .jspDrag
+ {
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+ }
+
+ .jspHorizontalBar .jspTrack,
+ .jspHorizontalBar .jspDrag
+ {
+  float: left;
+  height: 100%;
+ }
+
+ .jspArrow
+ {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+ }
+
+ .jspArrow.jspDisabled
+ {
+  cursor: default;
+ }
+
+ .jspVerticalBar .jspArrow
+ {
+  height: 16px;
+ }
+
+ .jspHorizontalBar .jspArrow
+ {
+  width: 16px;
+  float: left;
+  height: 100%;
+ }
+
+ .jspVerticalBar .jspArrow:focus
+ {
+  outline: none;
+ }
+
+ .jspCorner
+ {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+ }
+
+ * html .jspCorner
+ {
+  margin: 0 -3px 0 0;
+ }
+
+}
+
+// pp fixes
+.item__access-vpn {
+	padding-top: 15px;
+	margin-bottom 0;
+}
+
+.internet_item.access-settings_common-local-ip {
+	transform: translateY(-7px);
+	padding-bottom: 20px;
+	letter-spacing: -0.2px;
+	word-spacing: 2px;
+}
+
+.access-settings_common-firewall {
+	padding-top 4px;
+
+
+	.internet_item-name {
+		transform: translateY(5px);
+		letter-spacing: -0.9px;
+	}
+		.item-help {
+			top: 23px;
+			right: -36px;
+		}
+}
+
+.access-settings_common-spi {
+	.item-help{
+		top: 9px;
+		right: -36px;
+	}
+
+	label.checkbox-small_label {
+		transform: translateY(0px);
+	}
+
+	.internet_item-name {
+		transform: translateY(-3px);
+	}
+}
+
+.access-settings_common-vpn {
+	padding-top 14px;
+}
+
+.internet_item.item__access-vpn {
+	padding-bottom: 17px;
+	.internet_item {
+		padding-bottom 19px;
+	}
+
+	.internet_item.access-settings_common-vpn {
+		padding-bottom 27px;
+	}
+
+	.item__sub {
+		transform translateY(2px);
+	}
+}
+
+.internet_item.access-settings_common-lan {
+	margin-top: 22px;
+	padding-bottom: 21px;
+}
+
+.button__text.button_remove-filters {
+	font-size: 15px;
+}
+
+.filter-activity-status {
+	.button__text.button_remove-filters {
+		transform: translate(-6px, 6px);
+		position: relative;
+		left: -1px;
+		letter-spacing: -0.3px;
+		top: 1px;
+		word-spacing: 1px;
+	}
+}
+
+.page-access{
+	.internet_item .checkbox-small_label {
+		position: relative;
+		left 2px
+	}
+	.access-settings_common-spi {
+		padding-bottom: 29px;
+
+	}
+		.access-settings_common-vpn{
+			.internet_item-name{
+				position: relative;
+				top: -2px;
+				letter-spacing: -0.2px;
+				word-spacing: 2px;
+			}
+
+		}
+			.common-vpn-switches {
+				& > .item__sub{
+					position: relative;
+					left: -2px;
+					letter-spacing: -0.9px;
+					word-spacing: 3px;
+				}
+			}
+
+			#ips-pass + label {
+				position: relative;
+				top: -2px;
+			}
+				.access-settings_common-pptp {
+					.item__sub{
+						position: relative;
+						top: -2px;
+						letter-spacing: -0.9px;
+						word-spacing: 3px;
+					}
+				}
+	.access-settings_common-l2tp {
+		.item__sub{
+			position: relative;
+			top: -2px;
+			letter-spacing: -0.9px;
+			word-spacing: 3px;
+		}
+	}
+
+		#pptp-pass + label {
+			position: relative;
+			top: -3px;
+		}
+
+	#l2tp-pass + label {
+		position: relative;
+		top: -4px;
+	}
+		.lan-access-settings.internet_item-name {
+			position: relative;
+			top: 1px;
+			left: 1px;
+			letter-spacing: -0.3px;
+			word-spacing: 1px;
+		}
+	.access-settings_common-http{
+		.item__sub{
+			position: relative;
+			top: 6px;
+			left: -1px;
+			letter-spacing: -1.4px;
+		}
+			.itempick{
+				position: relative;
+				top: 3px;
+				left: 3px;
+			}
+				.item-help{
+					top: 22px;
+					right: -36px;
+				}
+		.input-text{
+			top: 3px;
+		}
+	}
+
+		.access-settings_common-https {
+			.item__sub{
+				position: relative;
+				top: 4px;
+				left: -1px;
+				letter-spacing: -1.4px;
+			}
+
+				.itempick{
+					position: relative;
+					top: 3px;
+					left: 2px;
+				}
+					.input-text{
+						top: 3px;
+					}
+						.item-help{
+							top: 22px;
+							right: -36px;
+						}
+		}
+
+			.access-settings_telnet {
+				.item__sub{
+					position: relative;
+					top: 6px;
+					left: -1px;
+					letter-spacing: -1.2px;
+				}
+				.itempick {
+					position: relative;
+					left: 3px;
+					top: 2px;
+				}
+					.input-text{
+						top: 2px;
+					}
+						.item-help{
+							top: 21px;
+							right: -36px;
+						}
+			}
+
+				.access-settings_ssh {
+				.item__sub{
+					position: relative;
+					top: 6px;
+					left: -1px;
+					letter-spacing: 0.2px;
+				}
+				.itempick {
+					position: relative;
+					left: 3px;
+					top: 2px;
+				}
+					.input-text{
+						top: 2px;
+					}
+						.item-help{
+							top: 21px;
+							right: -36px;
+						}
+				}
+
+					.access-settings_common-icmp {
+						.item__sub{
+							position: relative;
+							top: 6px;
+							left: -1px;
+							letter-spacing: -0.9px;
+						}
+						.itempick {
+							position: relative;
+							left: 3px;
+							top: 2px;
+						}
+							.input-text{
+								top: 2px;
+						}
+					}
+
+						.access-settings_common-samba{
+						.item__sub{
+							position: relative;
+							top: 6px;
+							left: -1px;
+							letter-spacing: -.9px;
+						}
+						.itempick {
+							position: relative;
+							left: 3px;
+							top: 2px;
+						}
+							.input-text{
+								top: 2px;
+						}
+						}
+
+		.access-lan-settings {
+			padding-bottom: 28px;
+
+			.input-text{
+				position: relative;
+				left: 4px;
+				height: 36px;
+				padding-left: 19px;
+				font-weight: 500;
+			}
+				.itempick{
+					width: 325px;
+				}
+		}
+
+		[data-tab-name="access-settings-tab2"]{
+			letter-spacing: -0.5px;
+
+			.access-table__filter-activity {
+				.table-jelect {
+					height: 33px;
+				}
+			}
+
+		}
+	[data-tab-name="access-settings-tab3"]{
+		letter-spacing: -0.8px;
+		padding-right: 24px;
+		padding-top: 4px;
+	}
+	[data-tab-name="access-settings-tab4"]{
+		padding-top: 4px;
+		padding-left: 17px;
+	}
+	[data-tab-name="access-settings-tab5"]{
+		padding-left: 19px;
+		letter-spacing: -0.5px;
+		line-height: 21px;
+		padding-top: 6px;
+	}
+
+		.access-settings_filter-type{
+			.internet_item-name{
+				position: relative;
+				top: 2px;
+				left: 1px;
+				letter-spacing: -0.1px;
+			}
+				.itempick{
+					position: relative;
+					left: 3px;
+				}
+					.item-help{
+						top: 26px;
+					}
+		}
+			.filter-activity-status {
+				.internet_item-name{
+					letter-spacing: -0.2px;
+				}
+					.item-help{
+						top: 22px;
+					}
+			}
+
+				#filter-activity-status + label, #filter-activity-status-mac + label, #filter-activity-status-url + label, #filter-activity-status-port + label {
+					position: relative;
+					top: 3px;
+					left: 3px;
+				}
+
+					.access-table__filter-activity {
+						td {
+							padding-top: 1px;
+							padding-bottom: 7px;
+						}
+
+						th:nth-of-type(1){
+							letter-spacing: -0.3px;
+						}
+						th:nth-of-type(2){
+							padding-left: 25px;
+						}
+						th:nth-of-type(3){
+							padding-left: 26px;
+						}
+							.table-header {
+								height: 39px;
+							}
+
+								tr {
+									height 20px
+								}
+
+									.jelect-current {
+										border-radius: 0;
+										line-height: 31px;
+									}
+					}
+
+	.button__add-filter {
+		margin-top: 23px;
+		position: relative;
+		top: 3px;
+		width: 211px;
+		border-radius: 4px;
+		height: 44px;
+		font-size: 15px;
+		padding-left: 3px;
+	}
+		#nat-status + label {
+			top: 3px;
+		}
+
+	.access-settings_nat-add-filter {
+		border-bottom: 1px solid #c9b8b9;
+		padding-bottom: 0px;
+
+
+		.button__add-filter {
+			top -16px
+			margin-bottom: 25px
+		}
+	}
+
+			.nat-ports-item {
+				margin-bottom: -47px;
+
+				th:nth-of-type(1) {
+					letter-spacing: -0.3px;
+					width: 177px;
+				}
+
+				th:nth-of-type(2) {
+					width: 175px;
+				}
+
+				th:nth-of-type(3){
+					padding-left: 27px;
+					width: 146px;
+				}
+
+				th:nth-of-type(4) {
+					padding-left: 14px;
+					letter-spacing: -0.3px;
+					width: 177px;
+				}
+
+				.jspDrag {
+					height: 6px;
+				}
+				.internet_item-name {
+					position: relative;
+					top: -8px;
+					left: -1px;
+					font-size: 15px;
+					letter-spacing: 0.2px;
+				}
+				.button__text.button_remove-filters {
+					position: relative;
+					top: -8px;
+					left: -6px;
+				}
+
+					  .nat-ports {
+						position: relative;
+						top: 2px;
+						height: 220px;
+					}
+			}
+
+				.nat-ports-item.collapsed {
+					margin-bottom: -133px;
+				}
+
+				.access-settings-dmz {
+					padding-top: 28px;
+					.internet_item-name {
+						position: relative;
+						top: -3px;
+						font-size: 17px;
+					}
+						.item-help {
+							top: 47px;
+							right: -36px;
+						}
+				}
+
+					.access-settings-dmz + .access-table__filter-activity {
+						padding-bottom: 18px;
+						position: relative;
+						top: -9px;
+
+						td {
+							padding-top: 8px;
+						}
+
+						input {
+							left: 28px;
+							letter-spacing: .2px;
+						}
+						.table-header {
+							th {
+								letter-spacing: -0.5px;
+							}
+							height: 36px;
+						}
+					}
+
+	.table__timepicker {
+		width: 687px;
+		font-weight: 300;
+		margin-bottom: 34px;
+
+		.timepicker_hours, .timepicker_days_day-name {
+			color: #6B5E61;
+		}
+		.timepicker_days_day-name {
+			padding-left: 24px;
+			color: #6B5E61;
+			float: left;
+			width: 255px;
+			height: 36px;
+			font-size: 15px;
+			line-height: 33px;
+			background-color: #bdb2b8;
+			letter-spacing: -.6px;
+		}
+
+		.timepicker_hours {
+			padding-top: 18px;
+			padding-left: 252px;
+			height: 37px;
+		}
+		.timepicker_hours span {
+			width: 17.7px;
+			left: 9px;
+		}
+		.timepicker_days_item {
+			height: 35.6px;
+		}
+	}
+
+		.parental-control {
+			padding-bottom: 58px;
+
+			.internet_item-name {
+				position: relative;
+				top: 2px;
+				letter-spacing: -0.2px;
+			}
+				#parrent-control-status + label {
+					position: relative;
+					top: 4px;
+				}
+				.item-help {
+					top: 21px;
+					right: -36px;
+				}
+		}
+			.parent-control-options {
+				.section-yandex {
+					margin-bottom: -23px;
+
+					.internet_item-name	{
+						top: -7px !important
+						letter-spacing: -.2px !important
+					}
+						.itempick {
+							top: -4px !important
+						}
+				}
+				.table__timepicker {
+					position: relative;
+					top: -3px;
+				}
+				.button__add-filter {
+					top 1px
+					margin-bottom: 10px;
+				}
+					.item-separator{
+						padding-top: 40px;
+						.item-help{
+							top: 55px;
+						}
+						.internet_item-name {
+							position: relative;
+							top: -2px;
+							left: 0px;
+							letter-spacing: -.2px;
+						}
+							.itempick {
+								position: relative;
+								left: 3px;
+								top: 0px;
+							}
+					}
+				.access-table.access-table__filter-activity.access-table th:nth-of-type(2) {
+					letter-spacing: 0px;
+					width: 475px;
+				}
+
+				.access-table.filter__mac td:first-child {
+					width: 211px;
+				}
+
+				.access-table.filter__mac td:nth-child(2) {
+					width: 475px;
+				}
+
+				.access-table.filter__mac input {
+					width: auto;
+				}
+
+				.access-table {
+					input {
+						letter-spacing: 0.5px;
+					}
+
+					position: relative;
+					top: -2px;
+				}
+				.table-header {
+					height: 38px;
+				}
+				.button__text.button_remove-filters {
+					position: relative;
+					top: 5px;
+					left: -6px;
+				}
+					.item-help {
+						top: 19px;
+						right: -36px;
+					}
+				.internet_item-name__fix {
+					position: relative;
+					top: 6px;
+					letter-spacing: -.2px;
+					line-height: 19px;
+				}
+			}
+
+				.qos-status {
+					.item-help {
+						top: 24px;
+						right: -36px;
+					}
+					.internet_item-name {
+						letter-spacing: .1px;
+					}
+						#qos + label {
+							position: relative;
+							top: 5px;
+						}
+				}
+					.access-settings_qos-disc {
+						.item__sub {
+							position: relative;
+							top: -12px;
+							letter-spacing: -0.9px;
+						}
+
+							.itempick {
+								position: relative;
+								top: -20px;
+								left: 3px;
+							}
+					}
+
+						.access-settings_qos-set {
+							.input-text {
+								position: relative;
+								left: 3px;
+								width: 207px;
+								height: 35px;
+							}
+							label {
+								position: relative;
+							}
+						}
+
+						.access-settings_qos-wrr {
+							.item-help {
+								top: 7px;
+								right: -36px;
+							}
+
+							.item__sub {
+								position: relative;
+								top: -11px;
+								letter-spacing: -0.4px;
+							}
+								#high-wrr {
+									top -16px
+								}
+									#high-wrr + label {
+										top: -16px;
+										left: 4px;
+									}
+						}
+							.access-settings_qos-wrr-high {
+								.item__sub {
+									position: relative;
+									top: -5px;
+									letter-spacing: -0.4px;
+								}
+								#big-wrr {
+									top -14px
+								}
+
+									#big-wrr + label {
+										top: -13px;
+										left: 4px;
+									}
+							}
+
+								.access-settings_qos-wrr-medium {
+									.item__sub {
+										position: relative;
+										top: -1px;
+										letter-spacing: -0.4px;
+									}
+									#medium-wrr {
+										top -11px
+									}
+
+									#medium-wrr + label {
+										top: -10px;
+										left: 4px;
+									}
+
+								}
+
+	.access-settings_qos-wrr-low {
+		.item__sub {
+			position: relative;
+			top: 5px;
+			letter-spacing: -0.2px;
+			left: -1px;
+		}
+		#low-wrr {
+			top -9px
+		}
+
+		#low-wrr + label {
+			top: -7px;
+			left: 4px;
+		}
+	}
+
+		.access-settings_qos-rule-number {
+			padding-top: 35px;
+			.jelect {
+				width: 209px;
+				height: 36px;
+				position: relative;
+				left: 2px;
+			}
+				.jelect-current {
+					line-height: 35px;
+				}
+		.internet_item-name {
+			position: relative;
+			top: -3px;
+			letter-spacing: -0.4px;
+			word-spacing: 2px;
+		}
+		}
+
+			.jelect-options {
+				left 0% !important
+				width 100% !important
+			}
+
+.rule-summary-section {
+	padding-top: 14px;
+}
+
+	.access-settings_qos-rule-btn {
+		.button__rule {
+			margin-top: 13px;
+			font-size: 16px;
+			font-weight: 300;
+			padding-left: 3px;
+		}
+	}
+
+	.access-settings-application {
+		.internet_item-name {
+			position: relative;
+			top: 4px;
+			letter-spacing: -0.4px;
+		}
+		.input-text {
+			position: relative;
+			left: 2px;
+			width: 208px;
+			height: 36px;
+		}
+	}
+
+		.access-settings_qos-phys-ports{
+			.item__sub {
+				position: relative;
+				top: -15px;
+				letter-spacing: -0.4px;
+			}
+
+				.physical_lan:nth-of-type(1) {
+					position: relative;
+					top: -25px;
+					label {
+						left: 13px;
+					}
+				}
+			.physical_lan:nth-of-type(2) {
+				position: relative;
+				top: -26px;
+				label {
+					left: 13px;
+				}
+			}
+			.physical_lan:nth-of-type(3) {
+				position: relative;
+				top: -27px;
+				label {
+					left: 13px;
+				}
+			}
+			.physical_lan:nth-of-type(4) {
+				position: relative;
+				top: -28px;
+				label {
+					left: 13px;
+				}
+			}
+		}
+			.access-settings-second-section {
+				margin-top: -34px;
+
+				.input-text {
+					position: relative;
+					left: 2px;
+					width: 208px;
+					height: 36px;
+				}
+					.mac-address-destination {
+						.item__sub {
+							position: relative;
+							top: 4px;
+							letter-spacing: -0.4px;
+						}
+					}
+
+						.ipv4v6 {
+							padding-top: 2px;
+							.item__sub {
+								position: relative;
+								top: 4px;
+								left: -1px;
+								letter-spacing: -0.4px;
+							}
+						}
+
+							.mask-prefix {
+								padding-top: 1px;
+
+							}
+			}
+
+	[data-tab="access-settings-tab2"]{
+		.internet_section__wrapper {
+			padding-bottom: 38px;
+		}
+
+		.access-table__filter-activity {
+			.table-jelect {
+				height: 33px;
+			}
+			.jelect-current {
+				letter-spacing: 0.1px;
+				padding-left:30px;
+				line-height: 33px;
+			}
+
+		}
+
+		.access-table.access-table__filter-activity tr td:nth-child(3), .access-table.nat-ports tr td:nth-child(3) {
+			width: 270px;
+
+		}
+
+		.button__add-filter {
+			margin-bottom: -67px;
+		}
+
+		.access-table input {
+			left: 28px;
+			top: 3px;
+			letter-spacing 0.2px
+		}
+
+		 .access-table.access-table__filter-activity.access-table th:nth-of-type(2) {
+			padding-left: 29px;
+		}
+
+		.access-table__filter-activity th:nth-of-type(3) {
+			padding-left: 30px;
+		}
+	}
+
+	[data-tab="access-settings-tab3"]{
+		.access-table.nat-ports tr:nth-last-child(-n+2) .jelect-options {
+			top -120px
+		}
+	}
+
+	[data-tab="access-settings-tab4"]{
+		.internet_section__wrapper {
+			padding-bottom: 66px;
+		}
+		.input-text {
+			letter-spacing: 0.3px;
+			font-weight: 500;
+			padding-left: 14px;
+			font-size: 15px;
+		}
+		.jelect-current {
+			line-height: 35px !important
+			font-weight 500
+			&:after {
+				width: 35px !important
+			}
+		}
+	}
+
+	.mask-prefix {
+		.item__sub {
+			position: relative;
+			top: 3px;
+			letter-spacing: -0.4px;
+		}
+	}
+
+	.ports-range {
+		padding-top: 2px
+		.item__sub {
+			position: relative;
+			top: 4px;
+			letter-spacing: -0.4px;
+		}
+
+		.input__separator {
+			position: relative;
+			left: 3px;
+			top -2px
+		}
+
+		input:nth-of-type(2) {
+			left 5px
+		}
+	}
+
+	.ports-range2 {
+		padding-top: 2px
+		.item__sub {
+			position: relative;
+			top: 4px;
+			letter-spacing: -0.2px;
+		}
+
+		.input__separator {
+			position: relative;
+			left: 3px;
+			top -1px
+		}
+
+		input:nth-of-type(2) {
+			left 5px
+		}
+	}
+
+	.mac-address-source {
+		padding-top: 1px;
+
+		.item__sub {
+			position: relative;
+			top: 4px;
+			letter-spacing: -.4px;
+		}
+	}
+
+	.protocol-id {
+		padding-top: 1px;
+		.item__sub {
+			position: relative;
+			top: 3px;
+			letter-spacing: -0.4px;
+		}
+		.jelect {
+			left: 2px;
+			width: 208px;
+			height: 36px;
+		}
+	}
+
+		.vlan-id-range {
+			padding-top: 1px;
+			.item__sub {
+				position: relative;
+				top: 5px;
+				letter-spacing: -0.4px;
+			}
+			.input__separator {
+				position: relative;
+				left: 3px;
+				top: -1px;
+			}
+
+			input:nth-of-type(2) {
+				left 5px
+			}
+		}
+
+		.ipp-ds {
+			padding-top: 2px;
+			.item__sub {
+				position: relative;
+				top: 3px;
+				letter-spacing: -0.4px;
+			}
+			.itempick {
+				position: relative;
+				left: 3px;
+			}
+		}
+
+			.priority-ip-range {
+				padding-top: 2px;
+				.item__sub {
+					position: relative;
+					top: -5px;
+					left: 1px;
+					letter-spacing: -0.4px;
+				}
+
+				.jelect {
+					position: relative;
+					left: 2px;
+					width: 208px;
+					height: 36px;
+				}
+
+				.input__separator {
+					position: relative;
+					left: 3px;
+				}
+
+				.jelect:nth-of-type(2) {
+					left 5px
+				}
+			}
+
+			.service-type {
+				.item__sub {
+					position: relative;
+					top: -2px;
+					left: 1px;
+					letter-spacing: -0.4px;
+				}
+				.jelect {
+					top: -5px;
+					left: 2px;
+					width: 208px;
+					height: 36px;
+				}
+			}
+
+			.dscp-range {
+				.item__sub {
+					position: relative;
+					top: 1px;
+					left: 1px;
+					letter-spacing: -.4px;
+				}
+
+				input:nth-of-type(1) {
+					position: relative;
+					top: -3px;
+				}
+				input:nth-of-type(2) {
+					position: relative;
+					top: -3px;
+					left: 5px;
+				}
+
+				.input__separator {
+					position: relative;
+					top: -5px;
+					left: 3px;
+				}
+			}
+
+			.access-802 {
+				.item__sub {
+					position: relative;
+					top: 3px;
+					left: 1px;
+					letter-spacing: -.4px;
+				}
+
+				.jelect {
+					width: 208px;
+					height: 36px;
+					position: relative;
+					top: -2px;
+					left: 2px;
+				}
+				.jelect:nth-of-type(2) {
+					left 5px
+				}
+				.input__separator {
+					position: relative;
+					top: -2px;
+					left: 3px;
+				}
+			}
+
+				.access-table-port {
+					th:nth-of-type(1) {
+						width 205px !important
+					}
+
+					th:nth-of-type(2) {
+						width: 209px !important
+					}
+
+					th:nth-of-type(3) {
+						width: 263px !important
+					}
+				}
+
+				.access-table-mac, .access-table-url {
+					overflow: hidden
+
+					td:first-child {
+						overflow: hidden;
+					}
+
+					td:nth-of-type(1) input {
+						top: -1px !important
+					}
+
+					td {
+						height: 35px !important
+					}
+
+					th:nth-of-type(1) {
+						width 235px !important
+					}
+
+					th:nth-of-type(2) {
+						width: 445px !important
+					}
+				}
+
+	.add-filter-mac {
+		position: relative;
+		top: -24px;
+		display none
+	}
+	.add-filter-url {
+		display none
+		position: relative;
+		top: -51px;
+	}
+	.add-filter-port {
+		display none
+		position: relative;
+		top: -78px;
+	}
+}

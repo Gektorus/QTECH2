@@ -1,0 +1,850 @@
+header.section-header
+	h1.section_name.section_name__internet Интернет
+	span.section-header_buttons
+		a(href="#home" class="button button__action") Назад
+		a(href="javascript: void(0)" class="button button__cherry") Сохранить
+section.internet
+	div.tab_section.items-2
+		.tab.content-tabs_selected(data-tab-name="internet-tab1") Основной канал
+		.tab(data-tab-name="internet-tab2") Резервный канал
+	section.internet_section(data-tab="internet-tab1")
+		.internet_section__wrapper
+			div.internet_item.internet_item__provider
+				span.internet_item-name Преднастройки провайдера
+				input(type="checkbox" id="provider-settings__main" class="checkbox-small" checked="")
+				label(for="provider-settings__main" class="checkbox-small_label flipswitch-fade")
+					span.checkbox-small_value
+					span.checkbox-small_slider
+				div.internet_item__provider-options.extend-item
+					span.internet_item-name Выберите провайдера
+					div(class="jelect" role="select")
+						input(id="provider-pick" name="tool" value="0" data-text="Выберите провайдера" type="text" class="jelect-input")
+						div(class="jelect-current" tabindex="0" role="button") Выберите
+						ul(class="jelect-options")
+							li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") Выберите провайдера
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet3
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet4
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet5
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet6
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet7
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet8
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet9
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet10
+			.internet_item.internet_item__connect-type
+				span.internet_item-name Тип соединения
+				div.internet_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-3")
+							input(type="radio" class="itempick_radio" id="connect_type-ethernet" name="connect_type" checked="")
+							label(for="connect_type-ethernet" class="itempick_label")
+								span(class="itempick_value") Ethernet
+							input(type="radio" class="itempick_radio" id="connect_type-adsl" name="connect_type")
+							label(for="connect_type-adsl" class="itempick_label")
+								span(class="itempick_value") ADSL
+							input(type="radio" class="itempick_radio" id="connect_type-lte" name="connect_type")
+							label(for="connect_type-lte" class="itempick_label")
+								span(class="itempick_value") 3G/4G
+							b(class="itempick_slider")
+
+			.settings__modem
+				.settings_item__modem
+					.usb_item.settings_item__modem-switch
+						span.usb_item-name 3G/4G модем
+						input(type="checkbox" id="internet-modem-switch" class="checkbox-small" checked)
+						label(for="internet-modem-switch" class="checkbox-small_label flipswitch-fade")
+							span.checkbox-small_value
+							span.checkbox-small_slider
+
+					.usb_item.settings_item__modem-buttons
+						span.settings_item-name.settings_item-name__empty
+						button(type="button" class="button button__ghost button__eject") Извлечь
+						button(type="button" class="button button__ghost button__refresh") Обновить
+				.internet_item.usb-model
+					span.internet_item-name.item__sub Модель USB-адаптера
+					div.internet_item-value
+						div(class="jelect" role="select")
+							input(id="internet-usb-model" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Выберите
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+				.internet_item.settings-location
+					span.internet_item-name.item__sub Ваше местоположение
+					div.internet_item-value
+						div(class="jelect" role="select")
+							input(id="internet-location" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Выберите
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+				.internet_item.settings-operator
+					span.internet_item-name.item__sub Оператор
+					div.internet_item-value
+						div(class="jelect" role="select")
+							input(id="internet-operator" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") Выберите
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+				.internet_item.item__settings-network
+					.internet_item-name.item__sub Сеть
+					.internet_item-value.internet_item__help
+						div(class="itempick")
+							div(class="itempick_holder items-3")
+								input(type="radio" class="itempick_radio" id="internet-network-auto" name="internet-network" checked)
+								label(for="internet-network-auto" class="itempick_label")
+									span(class="itempick_value") Auto
+								input(type="radio" class="itempick_radio" id="internet-network-3g" name="internet-network")
+								label(for="internet-network-3g" class="itempick_label")
+									span(class="itempick_value") 3G
+								input(type="radio" class="itempick_radio" id="internet-network-4g" name="internet-network")
+								label(for="internet-network-4g" class="itempick_label")
+									span(class="itempick_value") 4G
+								b(class="itempick_slider")
+				.internet_item.item__settings-apn
+					span.internet_item-name.item__sub APN
+					input(type="text" class="input-text" placeholder="")
+				.internet_item.item__settings-dial
+					span.internet_item-name.item__sub Dial number
+					input(type="text" class="input-text" placeholder="")
+				.internet_item.item__settings-pin
+					span.internet_item-name.item__sub PIN код
+					input(type="text" class="input-text" placeholder="")
+				.internet_item.item__settings-username
+					span.internet_item-name.item__sub Имя пользователя
+					input(type="text" class="input-text" placeholder="")
+				.internet_item.item__settings-password
+					span.internet_item-name.item__sub Пароль
+					input(type="password" class="input-text" placeholder="")
+
+
+			.internet_item.internet_item__connect-type__second
+				span.internet_item-name Тип подключения
+				div.internet_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-4")
+							input(type="radio" class="itempick_radio" id="connect_type-dhcp" name="connect_type__second" checked="")
+							label(for="connect_type-dhcp" class="itempick_label")
+								span(class="itempick_value") DHCP
+							input(type="radio" class="itempick_radio" id="connect_type-static" name="connect_type__second")
+							label(for="connect_type-static" class="itempick_label")
+								span(class="itempick_value") Static IP
+							input(type="radio" class="itempick_radio" id="connect_type-ppoe" name="connect_type__second")
+							label(for="connect_type-ppoe" class="itempick_label")
+								span(class="itempick_value") PPPoE
+							input(type="radio" class="itempick_radio" id="connect_type-pptp" name="connect_type__second")
+							label(for="connect_type-pptp" class="itempick_label")
+								span(class="itempick_value") PPtP/L2TP
+							b(class="itempick_slider")
+			.hidden-options.hidden-options__connect-type-internet
+				.internet_item.internet_item__static-ip
+					.internet_item
+						span.internet_item-name.sub-item IP адрес
+						.internet_item-value
+							input(type="text" class="input-text input-text__ip-mask")
+					.internet_item
+						span.internet_item-name.sub-item Маска подсети
+						.internet_item-value
+							input(type="text" class="input-text input-text__ip-mask")
+					.internet_item
+						span.internet_item-name.sub-item Основной шлюз
+						.internet_item-value
+							input(type="text" class="input-text input-text__ip-mask")
+				.internet_item.internet_item__pppoe
+					.internet_item
+						span.internet_item-name.sub-item Имя пользователя
+						.internet_item-value
+							input(type="text" class="input-text")
+					.internet_item
+						span.internet_item-name.sub-item Пароль
+						.internet_item-value
+							input(type="password" class="input-text")
+					.internet_item
+						span.internet_item-name.sub-item Имя сервиса
+						.internet_item-value
+							input(type="text" class="input-text")
+				.internet_item.internet_item__pptp
+					.internet_item
+						span.internet_item-name.sub-item Имя пользователя
+						.internet_item-value
+							input(type="text" class="input-text")
+					.internet_item
+						span.internet_item-name.sub-item Пароль
+						.internet_item-value
+							input(type="password" class="input-text")
+					.internet_item
+						span.internet_item-name.sub-item
+							span.internet_item-name__fix IP адрес / <br> Доменное имя сервера
+						.internet_item-value
+							input(type="text" class="input-text")
+			.internet_item.internet-settings__adsl
+				.internet_item.internet_item__vpi
+					span.internet_item-name VPI
+					input(type="text" class="input-text" id="internet-vpi" maxlength="3")
+					label(for="internet-vpi" class="input-text_label" value="0") (0-255)
+				.internet_item.internet_item__vci
+					span.internet_item-name VCI
+					input(type="text" class="input-text" id="internet-vci" maxlength="5")
+					label(for="internet-vci" class="input-text_label" value="33") (32-65535)
+			.internet_item.internet_item__dns-mode
+				span.internet_item-name Режим DNS
+				div.internet_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-2")
+							input(type="radio" class="itempick_radio" id="dns-auto" name="dns_mode" checked="")
+							label(for="dns-auto" class="itempick_label")
+								span(class="itempick_value") Авто определение
+							input(type="radio" class="itempick_radio" id="dns-byhand" name="dns_mode")
+							label(for="dns-byhand" class="itempick_label extended-show")
+								span(class="itempick_value") Вручную
+							b(class="itempick_slider")
+				div.extend-item.extend-item__dns.hidden-options
+					div.internet_item.internet_item__primary-dns
+						span.internet_item-name Предпочитаемый DNS
+						div.internet_item-value
+							span(class="input-field")
+								input(type="text" class="input-text input-text__ip-mask" placeholder="192.168.1.1" id="primarry-dns")
+								label(for="primarry-dns" class="input_hint input_hint__error") Неверный формат
+									span(class="help")
+										span.help_text Пример: 192.168.2.1
+					div.internet_item.internet_item__alt-dns
+						span.internet_item-name Альтернативный DNS
+						div.internet_item-value
+							span(class="input-field")
+								input(type="text" class="input-text input-text__ip-mask" id="alternate-dns")
+								label(for="alternate-dns" class="input_hint input_hint__error") Неверный формат
+									span(class="help")
+										span.help_text Пример: 192.168.2.1
+			.internet_item.internet_item__vlan
+				span.internet_item-name VLAN
+				input(type="checkbox" id="vlan-status" class="checkbox-small" checked="")
+				label(for="vlan-status" class="checkbox-small_label flipswitch-fade")
+					span.checkbox-small_value
+					span.checkbox-small_slider
+				div.internet-vlan-status
+					div.extend-item_holder
+						span.internet_item-name VLAN ID
+						input(type="text" class="input-text" id="vlan-id" maxlength="4")
+						label(for="vlan-id" class="input-text_label") (0-4095)
+					div.extend-item_holder
+						span.internet_item-name 802.1p
+						div(class="jelect" role="select")
+							input(id="ieee" name="tool" value="0" data-text="Выберите провайдера" type="text" class="jelect-input")
+							div(class="jelect-current" tabindex="0" role="button") 0
+							ul(class="jelect-options")
+								li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 0
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 3
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 4
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 5
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 6
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 7
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 8
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 9
+								li(class="jelect-option" data-val="1" tabindex="0" role="option") 10
+			.internet_item.internet_item__mac
+				.internet_item
+					span.internet_item-name MAC адрес
+					input(type="text" class="input-text" id="mac")
+				.internet_item
+					span.internet_item-name.internet_item-name__empty
+					button(type="button" class="button button__cherry button__copy-mac") Клонировать mac адрес моего пк
+		button.accordion(data-section-name="authentication" type="button") Настройки аутентификации
+		.internet_section__wrapper.authentication(data-section="authentication")
+			.internet_item.internet_item__authentication
+				span.internet_item-name Аутентификация 802.1x
+				input(type="checkbox" id="authentication-state" class="checkbox-small" checked="")
+				label(for="authentication-state" class="checkbox-small_label flipswitch-fade")
+					span.checkbox-small_value
+					span.checkbox-small_slider
+			.internet_item.internet_item__eap
+				span.internet_item-name Методы EAP
+				div.internet_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-2")
+							input(type="radio" class="itempick_radio" id="md" name="eap_methods" checked="")
+							label(for="md" class="itempick_label")
+								span(class="itempick_value") MD5
+							input(type="radio" class="itempick_radio" id="eap" name="eap_methods")
+							label(for="eap" class="itempick_label extended-show")
+								span(class="itempick_value") EAP-TLS
+							b(class="itempick_slider")
+				div.extend-item
+					div.extend-item_holder
+						span.internet_item-name Имя пользователя
+						input(type="text" class="input-text")
+					div.extend-item_holder
+						span.internet_item-name Пароль
+						input(type="password" class="input-text")
+			.internet_item.internet_item__cabinet
+				span.internet_item-name Кабинет
+				input(type="checkbox" id="cabinet" class="checkbox-small" checked="")
+				label(for="cabinet" class="checkbox-small_label flipswitch-fade")
+					span.checkbox-small_value
+					span.checkbox-small_slider
+				div.extend-item
+					div.extend-item_holder
+						span.internet_item-name Пароль
+						input(type="password" class="input-text" id="cabinet-password")
+		button.accordion(data-section-name="pro-settings" type="button") Профессиональные настройки
+		.internet_section__wrapper.pro-settings(data-section="pro-settings")
+			.internet_item.internet_item__mtu
+				span.internet_item-name Установка MTU
+				div.internet_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-2")
+							input(type="radio" class="itempick_radio" id="mtu-auto" name="mtu" checked="")
+							label(for="mtu-auto" class="itempick_label")
+								span(class="itempick_value") Автоматически
+							input(type="radio" class="itempick_radio" id="mtu-hand" name="mtu")
+							label(for="mtu-hand" class="itempick_label extended-show")
+								span(class="itempick_value") Вручную
+							b(class="itempick_slider")
+				div.extend-item
+					div.extend-item_holder
+						span.internet_item-name.sub-item Размер MTU
+						input(type="text" class="input-text")
+			.internet_item.internet_item__path
+				span.internet_item-name.sub-item Маршрут по умолчанию
+				input(type="checkbox" id="path" class="checkbox-small" checked="")
+				label(for="path" class="checkbox-small_label flipswitch-fade")
+					span.checkbox-small_value
+					span.checkbox-small_slider
+			.internet_item.internet_item__ip-version
+				span.internet_item-name Версия IP-адреса
+				div.internet_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-3")
+							input(type="radio" class="itempick_radio" id="ipv4" name="ip-version" checked="")
+							label(for="ipv4" class="itempick_label")
+								span(class="itempick_value") IPv4
+							input(type="radio" class="itempick_radio" id="hybrid" name="ip-version")
+							label(for="hybrid" class="itempick_label")
+								span(class="itempick_value") IPv4/IPv6
+							input(type="radio" class="itempick_radio" id="ipv6" name="ip-version")
+							label(for="ipv6" class="itempick_label")
+								span(class="itempick_value") IPv6
+							b(class="itempick_slider")
+			.hidden-options.hidden-options__ip-version
+				.hidden_item.connection-mode
+					.hidden_item.hidden_item__ip-version-hybrid
+						.dhcp-selected
+							span.internet_item-name.sub-item Режим подключения
+							em.internet_item-name Динамический режим
+							.internet_item
+								span.internet_item-name.sub-item DHCP IPv6
+								.internet_item-value
+									div(class="itempick")
+										div(class="itempick_holder items-2")
+											input(type="radio" class="itempick_radio" id="dhcp-dhcp2a" name="dhcp-dhcp2" checked)
+											label(for="dhcp-dhcp2a" class="itempick_label")
+												span(class="itempick_value") DHCP
+											input(type="radio" class="itempick_radio" id="dhcp-dhcp2b" name="dhcp-dhcp2")
+											label(for="dhcp-dhcp2b" class="itempick_label extended-show")
+												span(class="itempick_value") SLAAC
+											b(class="itempick_slider")
+							.internet_item.internet-item-dhcppd
+								span.internet_item-name.sub-item DHCP PD
+								input(type="checkbox" id="dhcppd" class="checkbox-small" checked="")
+								label(for="dhcppd" class="checkbox-small_label flipswitch-fade")
+									span.checkbox-small_value
+									span.checkbox-small_slider
+						.static-ip-selected
+							.hidden_item
+								span.internet_item-name.sub-item Режим подключения Ipv6
+								em.internet_item-name Статический режим
+							.hidden_item
+								span.internet_item-name.sub-item IPv6 адрес
+								.internet_item-value
+									input(type="text" class="input-text" id="internet-ipv6")
+							.hidden_item
+								span.internet_item-name.sub-item IPv6 шлюз по умолчанию
+								.internet_item-value
+									input(type="text" class="input-text" id="internet-ipv6-gateway")
+							.hidden_item
+								span.internet_item-name.sub-item IPv6 DNS Server1
+								.internet_item-value
+									input(type="text" class="input-text" id="internet-ipv6-dns")
+							.hidden_item
+								span.internet_item-name.sub-item IPv6 DNS Server2
+								.internet_item-value
+									input(type="text" class="input-text" id="internet-ipv6-dns-alt")
+						.pppoe-selected
+							.hidden_item
+								span.internet_item-name.sub-item DHCP IPv6
+								.internet_item-value
+									div(class="itempick")
+										div(class="itempick_holder items-2")
+											input(type="radio" class="itempick_radio" id="pppoe-dhcp1a" name="pppoe-dhcp" checked)
+											label(for="pppoe-dhcp1a" class="itempick_label")
+												span(class="itempick_value") DHCP
+											input(type="radio" class="itempick_radio" id="pppoe-dhcp1b" name="pppoe-dhcp")
+											label(for="pppoe-dhcp1b" class="itempick_label extended-show")
+												span(class="itempick_value") SLAAC
+											b(class="itempick_slider")
+							.internet_item.internet-item-dhcppd
+								span.internet_item-name.sub-item DHCP PD
+								input(type="checkbox" id="pppoe-dhcppd" class="checkbox-small" checked="")
+								label(for="pppoe-dhcppd" class="checkbox-small_label flipswitch-fade")
+									span.checkbox-small_value
+									span.checkbox-small_slider
+				.hidden_item.internet_item__ip-version6
+					.hidden_item
+						span.internet_item-name.sub-item DHCP IPv6
+						.internet_item-value
+							div(class="itempick")
+								div(class="itempick_holder items-2")
+									input(type="radio" class="itempick_radio" id="ipv6-dhcp1a" name="ipv6-dhcp" checked)
+									label(for="ipv6-dhcp1a" class="itempick_label")
+										span(class="itempick_value") DHCP
+									input(type="radio" class="itempick_radio" id="ipv6-dhcp1b" name="ipv6-dhcp")
+									label(for="ipv6-dhcp1b" class="itempick_label extended-show")
+										span(class="itempick_value") SLAAC
+									b(class="itempick_slider")
+					.internet_item.internet-item-dhcppd
+						span.internet_item-name.sub-item DHCP PD
+						input(type="checkbox" id="dhcppd-ipv6" class="checkbox-small" checked="")
+						label(for="dhcppd-ipv6" class="checkbox-small_label flipswitch-fade")
+							span.checkbox-small_value
+							span.checkbox-small_slider
+section.internet_section(data-tab="internet-tab2" hidden)
+	.internet_section__wrapper
+		div.internet_item.internet_item__provider
+			span.internet_item-name Преднастройки провайдера
+			input(type="checkbox" id="provider-settings__main2" class="checkbox-small" checked="")
+			label(for="provider-settings__main2" class="checkbox-small_label flipswitch-fade")
+				span.checkbox-small_value
+				span.checkbox-small_slider
+			div.extend-item.internet_item__provider-options2
+				span.internet_item-name Выберите провайдера
+				div(class="jelect" role="select")
+					input(id="provider-pick2" name="tool" value="0" data-text="Выберите провайдера" type="text" class="jelect-input")
+					div(class="jelect-current" tabindex="0" role="button") Выберите
+					ul(class="jelect-options")
+						li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") Выберите провайдера
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet
+						li(class="jelect-option" data-val="1" tabindex="0" role="option") NetByNet
+		.internet_item.internet_item__connect-type
+			span.internet_item-name Тип соединения
+			div.internet_item-value
+				div(class="itempick")
+					div(class="itempick_holder items-3")
+						input(type="radio" class="itempick_radio" id="connect_type-ethernet2" name="connect_type2" checked="")
+						label(for="connect_type-ethernet2" class="itempick_label")
+							span(class="itempick_value") Ethernet
+						input(type="radio" class="itempick_radio" id="connect_type-adsl2" name="connect_type2")
+						label(for="connect_type-adsl2" class="itempick_label")
+							span(class="itempick_value") ADSL
+						input(type="radio" class="itempick_radio" id="connect_type-lte2" name="connect_type2")
+						label(for="connect_type-lte2" class="itempick_label")
+							span(class="itempick_value") 3G/4G
+						b(class="itempick_slider")
+
+		.settings__modem
+			.settings_item__modem
+				.usb_item.settings_item__modem-switch
+					span.usb_item-name 3G/4G модем
+					input(type="checkbox" id="modem-switch" class="checkbox-small" checked)
+					label(for="modem-switch" class="checkbox-small_label flipswitch-fade")
+						span.checkbox-small_value
+						span.checkbox-small_slider
+
+				.usb_item.settings_item__modem-buttons
+					span.settings_item-name.settings_item-name__empty
+					button(type="button" class="button button__ghost button__eject") Извлечь
+					button(type="button" class="button button__ghost button__refresh") Обновить
+			.internet_item.usb-model
+				span.internet_item-name.item__sub Модель USB-адаптера
+				div.internet_item-value
+					div(class="jelect" role="select")
+						input(id="internet-usb-model2" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+						div(class="jelect-current" tabindex="0" role="button") Выберите
+						ul(class="jelect-options")
+							li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+			.internet_item.settings-location
+				span.internet_item-name.item__sub Ваше местоположение
+				div.internet_item-value
+					div(class="jelect" role="select")
+						input(id="internet-location2" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+						div(class="jelect-current" tabindex="0" role="button") Выберите
+						ul(class="jelect-options")
+							li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+			.internet_item.settings-operator
+				span.internet_item-name.item__sub Оператор
+				div.internet_item-value
+					div(class="jelect" role="select")
+						input(id="internet-operator2" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input")
+						div(class="jelect-current" tabindex="0" role="button") Выберите
+						ul(class="jelect-options")
+							li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 2
+			.internet_item.item__settings-network
+				.internet_item-name.item__sub Сеть
+				.internet_item-value.internet_item__help
+					div(class="itempick")
+						div(class="itempick_holder items-3")
+							input(type="radio" class="itempick_radio" id="internet-network-auto2" name="internet-network2" checked)
+							label(for="internet-network-auto2" class="itempick_label")
+								span(class="itempick_value") Auto
+							input(type="radio" class="itempick_radio" id="internet-network-3g2" name="internet-network2")
+							label(for="internet-network-3g2" class="itempick_label")
+								span(class="itempick_value") 3G
+							input(type="radio" class="itempick_radio" id="internet-network-4g2" name="internet-network2")
+							label(for="internet-network-4g2" class="itempick_label")
+								span(class="itempick_value") 4G
+							b(class="itempick_slider")
+			.internet_item.item__settings-apn
+				span.internet_item-name.item__sub APN
+				input(type="text" class="input-text" placeholder="")
+			.internet_item.item__settings-dial
+				span.internet_item-name.item__sub Dial number
+				input(type="text" class="input-text" placeholder="")
+			.internet_item.item__settings-pin
+				span.internet_item-name.item__sub PIN код
+				input(type="text" class="input-text" placeholder="")
+			.internet_item.item__settings-username
+				span.internet_item-name.item__sub Имя пользователя
+				input(type="text" class="input-text" placeholder="")
+			.internet_item.item__settings-password
+				span.internet_item-name.item__sub Пароль
+				input(type="password" class="input-text" placeholder="")
+
+
+		.internet_item.internet_item__connect-type__second
+			span.internet_item-name Тип подключения
+			div.internet_item-value
+				div(class="itempick")
+					div(class="itempick_holder items-4")
+						input(type="radio" class="itempick_radio" id="connect_type-dhcp2" name="connect_type__second2" checked="")
+						label(for="connect_type-dhcp2" class="itempick_label")
+							span(class="itempick_value") DHCP
+						input(type="radio" class="itempick_radio" id="connect_type-static2" name="connect_type__second2")
+						label(for="connect_type-static2" class="itempick_label")
+							span(class="itempick_value") Static IP
+						input(type="radio" class="itempick_radio" id="connect_type-ppoe2" name="connect_type__second2")
+						label(for="connect_type-ppoe2" class="itempick_label")
+							span(class="itempick_value") PPPoE
+						input(type="radio" class="itempick_radio" id="connect_type-pptp2" name="connect_type__second2")
+						label(for="connect_type-pptp2" class="itempick_label")
+							span(class="itempick_value") PPtP/L2TP
+						b(class="itempick_slider")
+		.hidden-options.hidden-options__connect-type-internet
+				.internet_item.internet_item__static-ip
+					.internet_item
+						span.internet_item-name.sub-item IP адрес
+						.internet_item-value
+							input(type="text" class="input-text input-text__ip-mask")
+					.internet_item
+						span.internet_item-name.sub-item Маска подсети
+						.internet_item-value
+							input(type="text" class="input-text input-text__ip-mask")
+					.internet_item
+						span.internet_item-name.sub-item Основной шлюз
+						.internet_item-value
+							input(type="text" class="input-text input-text__ip-mask")
+				.internet_item.internet_item__pppoe
+					.internet_item
+						span.internet_item-name.sub-item Имя пользователя
+						.internet_item-value
+							input(type="text" class="input-text")
+					.internet_item
+						span.internet_item-name.sub-item Пароль
+						.internet_item-value
+							input(type="password" class="input-text")
+					.internet_item
+						span.internet_item-name.sub-item Имя сервиса
+						.internet_item-value
+							input(type="text" class="input-text")
+				.internet_item.internet_item__pptp
+					.internet_item
+						span.internet_item-name.sub-item Имя пользователя
+						.internet_item-value
+							input(type="text" class="input-text")
+					.internet_item
+						span.internet_item-name.sub-item Пароль
+						.internet_item-value
+							input(type="password" class="input-text")
+					.internet_item
+						span.internet_item-name.sub-item
+							span.internet_item-name__fix IP адрес / <br> Доменное имя сервера
+						.internet_item-value
+							input(type="text" class="input-text")
+		.internet_item.internet-settings__adsl
+			.internet_item.internet_item__vpi
+				span.internet_item-name VPI
+				input(type="text" class="input-text" id="internet-vpi2" maxlength="3")
+				label(for="internet-vpi2" class="input-text_label" value="0") (0-255)
+			.internet_item.internet_item__vci
+				span.internet_item-name VCI
+				input(type="text" class="input-text" id="internet-vci2" maxlength="5")
+				label(for="internet-vci2" class="input-text_label" value="33") (32-65535)
+		.internet_item.internet_item__dns-mode
+			div.hidden-options
+				span.internet_item-name Режим DNS
+				div.internet_item-value
+					div(class="itempick")
+						div(class="itempick_holder items-2")
+							input(type="radio" class="itempick_radio" id="dns-auto2" name="dns_mode2" checked="")
+							label(for="dns-auto2" class="itempick_label")
+								span(class="itempick_value") Авто определение
+							input(type="radio" class="itempick_radio" id="dns-byhand2" name="dns_mode2")
+							label(for="dns-byhand2" class="itempick_label extended-show")
+								span(class="itempick_value") Вручную
+							b(class="itempick_slider")
+				div.extend-item.extend-item__dns
+					div.internet_item.internet_item__primary-dns
+						span.internet_item-name Предпочитаемый DNS
+						div.internet_item-value
+							span(class="input-field")
+								input(type="text" class="input-text" placeholder="192.168.1.1" id="primarry-dns2")
+								label(for="primarry-dns" class="input_hint input_hint__error") Неверный формат
+									span(class="help")
+										span.help_text Пример: 192.168.2.1
+					div.internet_item
+						span.internet_item-name Альтернативный DNS
+						div.internet_item-value
+							span(class="input-field")
+								input(type="text" class="input-text" id="alternate-dns2")
+								label(for="alternate-dns" class="input_hint input_hint__error") Неверный формат
+									span(class="help")
+										span.help_text Пример: 192.168.2.1
+		.internet_item.internet_item__vlan
+			span.internet_item-name VLAN
+			input(type="checkbox" id="vlan-status2" class="checkbox-small" checked="")
+			label(for="vlan-status2" class="checkbox-small_label flipswitch-fade")
+				span.checkbox-small_value
+				span.checkbox-small_slider
+			div.internet-vlan-status2
+				div.extend-item_holder
+					span.internet_item-name VLAN ID
+					input(type="text" class="input-text" id="reserve-vlan-id" maxlength="4")
+					label(for="reserve-vlan-id" class="input-text_label") (0-4095)
+				div.extend-item_holder
+					span.internet_item-name 802.1p
+					div(class="jelect" role="select")
+						input(id="ieee2" name="tool" value="0" data-text="Выберите провайдера" type="text" class="jelect-input")
+						div(class="jelect-current" tabindex="0" role="button") 0
+						ul(class="jelect-options")
+							li(class="jelect-option jelect-option_state_active" data-val="0" tabindex="0" role="option") 0
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+							li(class="jelect-option" data-val="1" tabindex="0" role="option") 1
+		.internet_item.internet_item__mac
+			.internet_item
+				span.internet_item-name MAC адрес
+				input(type="text" class="input-text" id="mac2")
+			.internet_item
+				span.internet_item-name.internet_item-name__empty
+				button(type="button" class="button button__cherry button__copy-mac") Клонировать мак адрес моего пк
+	button.accordion(data-section-name="authentication2" type="button") Настройки аутентификации
+	.internet_section__wrapper.authentication(data-section="authentication2")
+		.internet_item.internet_item__authentication
+			span.internet_item-name Аутентификация 802.1x
+			input(type="checkbox" id="authentication-state2" class="checkbox-small" checked="")
+			label(for="authentication-state2" class="checkbox-small_label flipswitch-fade")
+				span.checkbox-small_value
+				span.checkbox-small_slider
+		.internet_item.internet_item__eap
+			span.internet_item-name Методы EAP
+			div.internet_item-value
+				div(class="itempick")
+					div(class="itempick_holder items-2")
+						input(type="radio" class="itempick_radio" id="md2" name="eap_methods2" checked="")
+						label(for="md2" class="itempick_label")
+							span(class="itempick_value") MD5
+						input(type="radio" class="itempick_radio" id="eap2" name="eap_methods2")
+						label(for="eap2" class="itempick_label extended-show")
+							span(class="itempick_value") EAP-TLS
+						b(class="itempick_slider")
+			div.extend-item
+				div.extend-item_holder
+					span.internet_item-name Имя пользователя
+					input(type="text" class="input-text")
+				div.extend-item_holder
+					span.internet_item-name Пароль
+					input(type="password" class="input-text")
+		.internet_item.internet_item__cabinet
+			span.internet_item-name Кабинет
+			input(type="checkbox" id="cabinet2" class="checkbox-small" checked="")
+			label(for="cabinet2" class="checkbox-small_label flipswitch-fade")
+				span.checkbox-small_value
+				span.checkbox-small_slider
+			div.extend-item
+				div.extend-item_holder
+					span.internet_item-name Пароль
+					input(type="password" class="input-text" id="cabinet-password")
+	button.accordion(data-section-name="pro-settings2" type="button") Профессиональные настройки
+	.internet_section__wrapper.pro-settings(data-section="pro-settings2")
+		.internet_item.internet_item__mtu
+			span.internet_item-name Установка MTU
+			div.internet_item-value
+				div(class="itempick")
+					div(class="itempick_holder items-2")
+						input(type="radio" class="itempick_radio" id="mtu-auto2" name="mtu2" checked="")
+						label(for="mtu-auto2" class="itempick_label")
+							span(class="itempick_value") Автоматически
+						input(type="radio" class="itempick_radio" id="mtu-hand2" name="mtu2")
+						label(for="mtu-hand2" class="itempick_label extended-show")
+							span(class="itempick_value") Вручную
+						b(class="itempick_slider")
+			div.extend-item
+				div.extend-item_holder
+					span.internet_item-name.sub-item Размер MTU
+					input(type="text" class="input-text")
+		.internet_item.internet_item__path
+			span.internet_item-name.sub-item Маршрут по умолчанию
+			input(type="checkbox" id="path2" class="checkbox-small" checked="")
+			label(for="path2" class="checkbox-small_label flipswitch-fade")
+				span.checkbox-small_value
+				span.checkbox-small_slider
+		.internet_item.internet_item__ip-version
+			span.internet_item-name Версия IP-адреса
+			div.internet_item-value
+				div(class="itempick")
+					div(class="itempick_holder items-3")
+						input(type="radio" class="itempick_radio" id="ipv4-2" name="ip-version2" checked="")
+						label(for="ipv4-2" class="itempick_label")
+							span(class="itempick_value") IPv4
+						input(type="radio" class="itempick_radio" id="hybrid2" name="ip-version2")
+						label(for="hybrid2" class="itempick_label")
+							span(class="itempick_value") IPv4/IPv6
+						input(type="radio" class="itempick_radio" id="ipv6-2" name="ip-version2")
+						label(for="ipv6-2" class="itempick_label")
+							span(class="itempick_value") IPv6
+						b(class="itempick_slider")
+		.hidden-options.hidden-options__ip-version
+			.hidden_item.connection-mode
+				.hidden_item.hidden_item__ip-version-hybrid
+					.dhcp-selected
+						span.internet_item-name.sub-item Режим подключения
+						em.internet_item-name Динамический режим
+						.internet_item
+							span.internet_item-name.sub-item DHCP IPv6
+							.internet_item-value
+								div(class="itempick")
+									div(class="itempick_holder items-2")
+										input(type="radio" class="itempick_radio" id="reserve-dhcp-dhcp2a" name="reserve-dhcp-dhcp2" checked)
+										label(for="reserve-dhcp-dhcp2a" class="itempick_label")
+											span(class="itempick_value") DHCP
+										input(type="radio" class="itempick_radio" id="reserve-dhcp-dhcp2b" name="reserve-dhcp-dhcp2")
+										label(for="reserve-dhcp-dhcp2b" class="itempick_label extended-show")
+											span(class="itempick_value") SLAAC
+										b(class="itempick_slider")
+						.internet_item.internet-item-dhcppd
+							span.internet_item-name.sub-item DHCP PD
+							input(type="checkbox" id="reserve-dhcppd" class="checkbox-small" checked="")
+							label(for="reserve-dhcppd" class="checkbox-small_label flipswitch-fade")
+								span.checkbox-small_value
+								span.checkbox-small_slider
+					.static-ip-selected
+						.hidden_item
+							span.internet_item-name.sub-item Режим подключения Ipv6
+							em.internet_item-name Статический режим
+						.hidden_item
+							span.internet_item-name.sub-item IPv6 адрес
+							.internet_item-value
+								input(type="text" class="input-text" id="internet-ipv6-2")
+						.hidden_item
+							span.internet_item-name.sub-item IPv6 шлюз по умолчанию
+							.internet_item-value
+								input(type="text" class="input-text" id="internet-ipv6-gateway-2")
+						.hidden_item
+							span.internet_item-name.sub-item IPv6 DNS Server1
+							.internet_item-value
+								input(type="text" class="input-text" id="internet-ipv6-dns2")
+						.hidden_item
+							span.internet_item-name.sub-item IPv6 DNS Server2
+							.internet_item-value
+								input(type="text" class="input-text" id="internet-ipv6-dns-alt2")
+					.pppoe-selected
+						.hidden_item
+							span.internet_item-name.sub-item DHCP IPv6
+							.internet_item-value
+								div(class="itempick")
+									div(class="itempick_holder items-2")
+										input(type="radio" class="itempick_radio" id="reserve-pppoe-dhcp1a" name="reserve-pppoe-dhcp" checked)
+										label(for="reserve-pppoe-dhcp1a" class="itempick_label")
+											span(class="itempick_value") DHCP
+										input(type="radio" class="itempick_radio" id="reserve-pppoe-dhcp1b" name="reserve-pppoe-dhcp")
+										label(for="reserve-pppoe-dhcp1b" class="itempick_label extended-show")
+											span(class="itempick_value") SLAAC
+										b(class="itempick_slider")
+						.internet_item.internet-item-dhcppd
+							span.internet_item-name.sub-item DHCP PD
+							input(type="checkbox" id="reserve-pppoe-dhcppd" class="checkbox-small" checked="")
+							label(for="reserve-pppoe-dhcppd" class="checkbox-small_label flipswitch-fade")
+								span.checkbox-small_value
+								span.checkbox-small_slider
+			.hidden_item.internet_item__ip-version6
+				.hidden_item
+					span.internet_item-name.sub-item DHCP IPv6
+					.internet_item-value
+						div(class="itempick")
+							div(class="itempick_holder items-2")
+								input(type="radio" class="itempick_radio" id="reserve-ipv6-dhcp1a" name="reserve-ipv6-dhcp" checked)
+								label(for="reserve-ipv6-dhcp1a" class="itempick_label")
+									span(class="itempick_value") DHCP
+								input(type="radio" class="itempick_radio" id="reserve-ipv6-dhcp1b" name="reserve-ipv6-dhcp")
+								label(for="reserve-ipv6-dhcp1b" class="itempick_label extended-show")
+									span(class="itempick_value") SLAAC
+								b(class="itempick_slider")
+				.internet_item.internet-item-dhcppd
+					span.internet_item-name.sub-item DHCP PD
+					input(type="checkbox" id="reserve-dhcppd-ipv6" class="checkbox-small")
+					label(for="reserve-dhcppd-ipv6" class="checkbox-small_label flipswitch-fade")
+						span.checkbox-small_value
+						span.checkbox-small_slider

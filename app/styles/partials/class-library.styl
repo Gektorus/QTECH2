@@ -1,0 +1,384 @@
+.nav-wrapper {
+	width: 803px;
+	margin: 150px auto 0;
+	transform: translateX(175px);
+	/*overflow-y: hidden;*/
+	min-height: 1000px;
+	height: 1000px;
+	position relative
+}
+
+.wrapper {
+	width: 100%;
+	position absolute;
+	overflow-y: hidden;
+	padding: 10px 0;
+	padding-bottom 150px;
+	opacity: 0
+	left: -9999px
+	top: 0
+	height: 9999px;
+	transition opacity 1.2s;
+	outline 10px transparent solid; // fix antialiasing bug
+}
+
+.hidden-target {
+	position: fixed
+	left: -9999px;
+	top: 0;
+}
+
+// buttons size fixes
+.button {
+	font-family roboto
+}
+
+.button__action {
+	font-size: 18px;
+	border-width 1px;
+	min-width: 0
+	border-radius: 3px;
+}
+
+.button__action:before {
+	border-width: 4.5px 5px 4.5px 0;
+	transform: translate(-10px, -2px);
+}
+
+.button__cherry {
+	border-radius 3px;
+	font-size: 18px;
+	padding: 0
+	text-align: center;
+}
+
+.tab {
+	height: 79px;
+	font-size: 18px
+	font-family: roboto
+	font-weight 300
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: all .3s
+
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #fff;
+	}
+
+	&.content-tabs_selected {
+		/*background-color: rgba(255, 255, 255, .72)*/
+		background-color: #fff;
+		opacity: .73;
+		color: #9c8085;
+		cursor: default
+		/*pointer-events: none;*/
+
+		&:hover {
+			/*background-color: rgba(255, 255, 255, .82)*/
+			opacity: .84;
+		}
+	}
+}
+
+.itempick {
+	width: 429px;
+	height: 36px;
+	padding: 2px;
+
+	&_label {
+		transition background-color .3s;
+		border-radius 4px;
+	}
+
+	&_label:hover {
+		background-color: rgba(182, 63, 86, .1);
+	}
+
+	&__small {
+		width: 322px;
+	}
+}
+
+.itempick .itempick_value {
+	font-size 15px
+	transition color .4s;
+	line-height 14px
+	letter-spacing -.7px
+}
+
+.input-text {
+	width: 210px;
+	height: 37px;
+	border: 1px solid #b63f56;
+	box-shadow: 0 0 1px #91767b;
+	padding-left: 15px
+
+	font-size: 14px;
+	color: #8b6e74;
+	border-color: #967c80;
+
+	&.input-text__invalid {
+		border-color: #b63f56;
+	}
+
+	&:focus {
+		.input_hint {
+			opacity 1;
+			left: 210px;
+		}
+	}
+	.input_hint.input_hint__invalid {
+		& {
+			opacity 1;
+			left: 210px;
+
+		}
+	}
+
+	&__small {
+		width 97px;
+		border-radius 2px;
+	}
+}
+
+.input_hint {
+	width: 210px;
+	height: 37px;
+	font-size: 16px;
+	font-weight 400
+	font-family roboto
+	padding: 0 38px 0 18px;
+	line-height 37px
+	left: 210px;
+	margin-left: 10px;
+
+	&:before {
+		border-width: 4.5px 6px 4.5px 0;
+		margin-top: -4.5px;
+		left: -6px
+	}
+	.help {
+		padding: 0 18px;
+		background-image: url('../images/input__help.png')
+
+		&:after {
+			contnet: ''
+			height: 100%;
+			width: 10px;
+			left: -10px;
+			top: 0;
+			opacity 0;
+		}
+	}
+	.help_text {
+		margin-top: -17px;
+		margin-left: -40px;
+		width: 150px;
+		font-size: 14px;
+		z-index: 2;
+		&:before {
+			content: ''
+			width: 100%;
+			height: 10px;
+			left: 0
+			position absolute
+			bottom: -10px;
+			opacity 0
+		}
+	}
+}
+
+.input-text_label {
+	padding-left: 5px;
+	color: #8b6e74
+	font-weight 300
+	font-family roboto
+}
+
+.accordion {
+	border: none;
+	display block
+	height: 87px;
+	font-family roboto
+	font-size: 18px;
+	text-align left;
+	padding-left 60px;
+	line-height 87px;
+	background-color: rgba(0, 0, 0, .6);
+
+	&:after {
+		content: ''
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 3px 3px 0 3px;
+		border-color: #fff transparent transparent transparent;
+		position absolute
+		right: 29px;
+		top: 50%;
+		margin-top: 2.5px;
+	}
+
+	&:hover {
+		background-color rgba(0, 0, 0, .7);
+	}
+}
+
+.checkbox-small_value {
+	&:after {
+		line-height normal
+	}
+}
+
+.checkbox-medium_label {
+	width: 80px;
+	height: 30px;
+	border-width: 1px;
+	box-shadow: 0 0 1px #fff;
+}
+
+.checkbox-medium_value:after {
+	font-size: 14px;
+	left: 15px;
+}
+
+.checkbox-medium_slider:after {
+	width: 20px;
+	height: 20px;
+	border-radius 4px;
+	left: 2px;
+	margin-top: -10px;
+}
+
+.checkbox-medium:checked ~ .checkbox-medium_label .checkbox-medium_slider:after {
+	left: 46px;
+}
+
+.checkbox-medium:checked ~ .checkbox-medium_label .checkbox-medium_value:after {
+	left: -17px;
+}
+
+.internet_item__help {
+	position relative;
+}
+
+.item-help {
+	position: absolute;
+	right: -37px;
+	top: 18px;
+	margin-top: -10px;
+	width: 22px;
+	height: 20px;
+	background: url(../images/help-ico.png) 1px 0 no-repeat;
+	background-size: 20px
+	opacity .8;
+	transition: opacity .2s;
+
+	&:hover {
+		opacity 1;
+	}
+}
+
+.internet_item-name__fix {
+	line-height normal
+}
+
+.internet_section__wrapper:not(:first-of-type) .internet_item:first-child {
+	padding-top: 50px;
+}
+
+// timepicker table
+.table__timepicker {
+	margin-bottom: 25px;
+}
+
+.timepicker_hours {
+	width: 688px
+	padding-left: 255px;
+	padding-top 15px;
+	background-color: #bdb2b8;
+	color: #947b81;
+	height: 32px;
+
+	span {
+		font-size: 14px;
+		float: left;
+		width: 18px;
+		padding-bottom: 2px;
+	}
+}
+
+.timepicker_days_day-name {
+	float: left;
+	width: 255px;
+	background-color: #bdb2b8;
+	font-size: 18px;
+	height: 36px;
+	padding-left 25px;
+	line-height 36px;
+	color: #947b81;
+}
+
+.timepicker_days_item {
+	clear: both;
+	height: 36px;
+	span {
+		float: left;
+		width: 18px;
+		height 100%;
+		box-shadow: 0 0 1px #947b81;
+		transition: box-shadow .2s, background-color .2s;
+
+		&.highlighted {
+			background-color: #b63f56;
+			box-shadow: 0 0 1px #b63f56;
+		}
+	}
+}
+
+.fixed-header_container {
+	position fixed;
+	width: 100%;
+	height: 90px
+	top: 0;
+	left: 0;
+	background-color: rgba(75, 58, 57, .8);
+	z-index 8;
+	margin-left 330px;
+	min-width 1007px;
+
+	display flex;
+	align-items: center;
+	min-height 90px;
+
+	.section-header {
+		width: 811px;
+		padding: 25px 0;
+		margin: 0 auto;
+		transform: translateX(-150px);
+
+		.section_name {
+			margin-bottom 0;
+		}
+	}
+
+	.section-header_buttons {
+		margin-right: 8px;
+	}
+}
+
+.main-menu.main-menu-scrolled {
+	top: 0;
+}
+
+.internet_item .jelect-options {
+	z-index 4;
+}
+
+.jelect.jelect_state_active {
+	z-index 9;
+}
+
+.wrapper [class$="item"] .checkbox-small:checked ~ .checkbox-small_label .checkbox-small_value:after {
+	left: -8px;
+}

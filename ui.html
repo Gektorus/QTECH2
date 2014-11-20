@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/common/normalize.css">
+	<link rel="stylesheet" href="css/common/font.css">
+	<link rel="stylesheet" href="css/ui.css">
+	<title>UI</title>
+</head>
+<body>
+
+	<div class="ui_holder">
+
+		<div class="ui-item">
+			<input type="checkbox" id="checkbox-example-large" class="checkbox-large" checked>
+			<label for="checkbox-example-large" class="checkbox-large_label">
+				<span class="checkbox-large_value">5 ГГц</span>
+				<span class="checkbox-large_value checkbox-large_slider">2,4 ГГц</span>
+			</label>
+		</div>
+
+		<div class="ui-item">
+			<input type="checkbox" id="checkbox-example-small" class="checkbox-small" checked>
+			<label for="checkbox-example-small" class="checkbox-small_label">
+				<span class="checkbox-small_value"></span>
+				<span class="checkbox-small_slider"></span>
+			</label>
+		</div>
+
+		<div class="ui-item">
+			<input type="checkbox" id="checkbox-example-medium" class="checkbox-medium" checked>
+			<label for="checkbox-example-medium" class="checkbox-medium_label">
+				<span class="checkbox-medium_value"></span>
+				<span class="checkbox-medium_slider"></span>
+			</label>
+		</div>
+
+		<div class="ui-item">
+			<a href="javascript: void(0)" class="button button__cherry">Клонировать мак адрес</a>
+		</div>
+		<div class="ui-item">
+			<button class="button button__cherry">Клонировать мак адрес</button>
+		</div>
+
+		<div class="ui-item">
+			<a href="javascript: void(0)" class="button button__ghost">Обновить</a>
+		</div>
+		<div class="ui-item">
+			<button class="button button__ghost">Обновить</button>
+		</div>
+
+		<div class="ui-item">
+			<a href="javascript: void(0)" class="button button__action">Назад</a>
+		</div>
+		<div class="ui-item">
+			<button class="button button__action">Назад</button>
+		</div>
+
+		<div class="ui-item">
+			<div class="tab tab__active">
+				<span class="tab_name">Основная сеть</span>
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<div class="tab">
+				<span class="tab_name">Основная сеть</span>
+			</div>
+		</div>
+
+		<div class="ui-item oveflow">
+			<header class="tab_section items-3">
+				<div class="tab">Основной</div>
+				<div class="tab tab__active">Вспомогательная сеть</div>
+				<div class="tab">Третья</div>
+			</header>
+		</div>
+
+		<div class="ui-item">
+			<a href="javascript: void(0)" class="button button__text">Удалить все</a>
+		</div>
+
+		<div class="ui-item">
+			<button class="button button__text">Удалить все</button>
+		</div>
+
+		<div class="ui-item">
+			<div class="jelect" role="select">
+				<input id="jelect" name="tool" value="0" data-text="imagemin" type="text" class="jelect-input">
+				<div class="jelect-current" tabindex="0" role="button">Выберите</div>
+					<ul class="jelect-options">
+						<li class="jelect-option jelect-option_state_active" data-val='0' tabindex="0" role="option">imagemin</li>
+						<li class="jelect-option" data-val='1' tabindex="0" role="option">stylus</li>
+						<li class="jelect-option" data-val='2' tabindex="0" role="option">cssmin</li>
+						<li class="jelect-option" data-val='3' tabindex="0" role="option">autoprefixer</li>
+					</ul>
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<input type="text" value="textField" placeholder="text" class="input-text">
+		</div>
+
+		<div class="ui-item">
+			<div class="jelect jelect__language" role="select">
+				<input id="jelect-language" name="tool" value="0" data-text="imagemin" type="text" class="jelect-input">
+				<div class="jelect-current" tabindex="0" role="button">Русский</div>
+					<ul class="jelect-options">
+						<li class="jelect-option" data-val='1' tabindex="0" role="option">Английский</li>
+						<li class="jelect-option" data-val='2' tabindex="0" role="option">Корейский</li>
+						<li class="jelect-option" data-val='3' tabindex="0" role="option">Китайский</li>
+					</ul>
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<a href="javascript: void(0)" class="button button__cherry popup_call" data-popup="target">Попап</a>
+			<div class="popup_wrapper" data-popupname="target">
+
+			</div>
+			<div class="popup_overlay">
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<div class="jelect jelect__small" role="select">
+				<input id="jelect-name" name="tool" value="0" data-text="imagemin" type="text" class="jelect-input">
+				<div class="jelect-current" tabindex="0" role="button">Авто</div>
+					<ul class="jelect-options">
+						<li class="jelect-option jelect-option_state_active" data-val='0' tabindex="0" role="option">Авто</li>
+						<li class="jelect-option" data-val='1' tabindex="0" role="option">1</li>
+						<li class="jelect-option" data-val='2' tabindex="0" role="option">2</li>
+						<li class="jelect-option" data-val='3' tabindex="0" role="option">3</li>
+						<li class="jelect-option" data-val='4' tabindex="0" role="option">4</li>
+						<li class="jelect-option" data-val='5' tabindex="0" role="option">5</li>
+						<li class="jelect-option" data-val='6' tabindex="0" role="option">6</li>
+						<li class="jelect-option" data-val='7' tabindex="0" role="option">7</li>
+						<li class="jelect-option" data-val='8' tabindex="0" role="option">8</li>
+						<li class="jelect-option" data-val='9' tabindex="0" role="option">9</li>
+					</ul>
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<div class="itempick">
+				<div class="itempick_holder items-4">
+					<input type="radio" class="itempick_radio" id="first" name="radio" checked>
+					<label for="first" class="itempick_label">
+						<span class="itempick_value">2.4 Ггц</span>
+					</label>
+					<input type="radio" class="itempick_radio" id="second" name="radio">
+					<label for="second" class="itempick_label">
+						<span class="itempick_value">2.6 Ггц</span>
+					</label>
+					<input type="radio" class="itempick_radio" id="third" name="radio">
+					<label for="third" class="itempick_label">
+						<span class="itempick_value">5 Ггц</span>
+					</label>
+					<input type="radio" class="itempick_radio" id="fourth" name="radio">
+					<label for="fourth" class="itempick_label">
+						<span class="itempick_value">5.4 Ггц</span>
+					</label>
+					<b class="itempick_slider"></b>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<div class="itempick">
+				<div class="itempick_holder items-3">
+					<input type="radio" class="itempick_radio" id="first1" name="radio1" checked>
+					<label for="first1" class="itempick_label">
+						<span class="itempick_value">2.4 Ггц</span>
+					</label>
+					<input type="radio" class="itempick_radio" id="second2" name="radio1">
+					<label for="second2" class="itempick_label">
+						<span class="itempick_value">2.6 Ггц</span>
+					</label>
+					<input type="radio" class="itempick_radio" id="third3" name="radio1">
+					<label for="third3" class="itempick_label">
+						<span class="itempick_value">5 Ггц</span>
+					</label>
+					<b class="itempick_slider"></b>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<div class="time-table">
+				<div class="time-table_section section__days">
+					<span class="days_name">Понедельник</span>
+					<span class="days_name">Вторник</span>
+					<span class="days_name">Среда</span>
+					<span class="days_name">Четверг</span>
+					<span class="days_name">Пятница</span>
+					<span class="days_name">Суббота</span>
+					<span class="days_name">Воскресенье</span>
+				</div>
+				<div class="time-table_section section__time">
+					<div class="time_holder">
+						<span class="time_value">0</span>
+						<span class="time_value">1</span>
+						<span class="time_value">2</span>
+						<span class="time_value">3</span>
+						<span class="time_value">4</span>
+						<span class="time_value">5</span>
+						<span class="time_value">6</span>
+						<span class="time_value">7</span>
+						<span class="time_value">8</span>
+						<span class="time_value">9</span>
+						<span class="time_value">10</span>
+						<span class="time_value">11</span>
+						<span class="time_value">12</span>
+						<span class="time_value">13</span>
+						<span class="time_value">14</span>
+						<span class="time_value">15</span>
+						<span class="time_value">16</span>
+						<span class="time_value">17</span>
+						<span class="time_value">18</span>
+						<span class="time_value">19</span>
+						<span class="time_value">20</span>
+						<span class="time_value">21</span>
+						<span class="time_value">22</span>
+						<span class="time_value">23</span>
+					</div>
+					<div class="pickable-table">
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+					</div>
+					<!-- /time_holder -->
+				</div>
+			</div>
+			<!-- /time-table -->
+		</div>
+
+		<div class="ui-item">
+			<div class="time-table time-table__fixed">
+				<div class="time-table_section section__days">
+					<span class="days_name">Понедельник</span>
+					<span class="days_name">Вторник</span>
+					<span class="days_name">Среда</span>
+					<span class="days_name">Четверг</span>
+					<span class="days_name">Пятница</span>
+					<span class="days_name">Суббота</span>
+					<span class="days_name">Воскресенье</span>
+				</div>
+				<div class="time-table_section section__time">
+					<div class="time_holder">
+						<span class="time_value">0</span>
+						<span class="time_value">1</span>
+						<span class="time_value">2</span>
+						<span class="time_value">3</span>
+						<span class="time_value">4</span>
+						<span class="time_value">5</span>
+						<span class="time_value">6</span>
+						<span class="time_value">7</span>
+						<span class="time_value">8</span>
+						<span class="time_value">9</span>
+						<span class="time_value">10</span>
+						<span class="time_value">11</span>
+						<span class="time_value">12</span>
+						<span class="time_value">13</span>
+						<span class="time_value">14</span>
+						<span class="time_value">15</span>
+						<span class="time_value">16</span>
+						<span class="time_value">17</span>
+						<span class="time_value">18</span>
+						<span class="time_value">19</span>
+						<span class="time_value">20</span>
+						<span class="time_value">21</span>
+						<span class="time_value">22</span>
+						<span class="time_value">23</span>
+					</div>
+					<div class="pickable-table">
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+						<div class="days_row">
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+							<span class="pick"></span>
+						</div>
+					</div>
+					<!-- /time_holder -->
+				</div>
+			</div>
+			<!-- /time-table -->
+		</div>
+
+		<div class="ui-item">
+			<div class="accordion">
+				<span class="accordion_name">Настройки радиомодуля</span>
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<div class="accordion accordion__visible">
+				<span class="accordion_name">Настройки радиомодуля</span>
+			</div>
+		</div>
+
+		<div class="ui-item">
+			<div class="tab_section items-3">
+				<div class="accordion accordion__visible">
+					<span class="accordion_name">Настройки радиомодуля</span>
+				</div>
+				<div class="accordion">
+					<span class="accordion_name">Настройки радиомодуля</span>
+				</div>
+				<div class="accordion">
+					<span class="accordion_name">Настройки радиомодуля</span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="ui-item">
+			<div class="input-field">
+				<input type="text" class="input-text input-text__invalid" placeholder="192.168.1.1" id="ip">
+				<label for="ip" class="input_hint input_hint__error">
+					Неверный формат
+					<span class="help">
+						<span class="help_text">Пример: 192.168.2.1</span>
+					</span>
+				</label>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="app/scripts/libs/jquery-2.1.1.min.js"></script>
+	<script src="app/scripts/libs/jquery-ui.min.js"></script>
+	<script src="app/scripts/libs/jquery.jscrollpane.min.js"></script>
+	<script src="app/scripts/libs/jquery.jelect.min.js"></script>
+	<script src="app/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<header class="section-header">
+	<h1 class="section_name section_name__settings">Мастер настройки</h1>
+</header>
+<section class="settings settings_section-conntype">
+	<section class="settings_section">
+		<div class="settings_section__wrapper">
+			<div class="settings_item settings-wrapper-inner"><span class="settings_item-name item__sub">Мастер настройки поможет настроить роутер для подключения к сети <br> интернет. Определить тип подключения автоматически?</span>
+			</div>
+			<div class="settings_item item__settings-section">
+				<input type="radio" id="settings-auto" name="settings-conntype" checked="checked" />
+				<label for="settings-auto">Автоматическая настройка</label>
+				<input type="radio" id="settings-manual" name="settings-conntype" />
+				<label for="settings-manual">Ручная настройка</label>
+				<input type="radio" id="settings-provider" name="settings-conntype" />
+				<label for="settings-provider">Преднастройки провайдера</label>
+			</div>
+			<div class="settings_item provider-select">
+				<div role="select" class="jelect">
+					<input id="settings-provider-pick" name="tool" value="0" data-text="Провайдер" type="text" class="jelect-input" />
+					<div tabindex="0" role="button" class="jelect-current">Провайдер</div>
+					<ul class="jelect-options">
+						<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">Провайдер</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Провайдер 2</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Провайдер 3</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Провайдер 4</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Провайдер 5</li>
+					</ul>
+				</div>
+				<div role="select" class="jelect">
+					<input id="settings-division-pick" name="tool" value="0" data-text="Филиал" type="text" class="jelect-input" />
+					<div tabindex="0" role="button" class="jelect-current">Филиал</div>
+					<ul class="jelect-options">
+						<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">Филиал</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Филиал 2</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Филиал 3</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Филиал 4</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Филиал 5</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Филиал 6</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Филиал 7</li>
+					</ul>
+				</div>
+				<div role="select" class="jelect">
+					<input id="settings-street-pick" name="tool" value="0" data-text="Улица" type="text" class="jelect-input" />
+					<div tabindex="0" role="button" class="jelect-current">Улица</div>
+					<ul class="jelect-options">
+						<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">Улица</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Улица 2</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Улица 3</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Улица 4</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">Улица 5</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+<footer class="section-footer settings_section-conntype"><span class="section-footer_buttons"><a id="step1-prev" href="#home" class="button button__action button__prev">Назад</a><a id="step1-next" href="javascript: void(0)" class="button button__cherry button__next">Далее</a></span>
+</footer>
+<section class="settings_section settings_section-preloader">
+	<div class="settings_section__wrapper">
+		<div class="settings_item settings-wrapper-inner"><span class="settings_item-name item__sub">Определение типа подключения.</span>
+			<div class="settings_item item__settings-section">
+				<div class="preload">
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+					<div class="preload_item"></div>
+				</div><span class="preloader-message">Пожалуйста, подождите ...</span>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="section-footer settings_section-preloader"><span class="section-footer_buttons"><a id="preloader-prev" href="javascript:void(0)" class="button button__cherry button__prev">Назад</a></span>
+</footer>
+<section class="settings_section settings_section-fail">
+	<div class="settings_section__wrapper">
+		<div class="settings_item settings-wrapper-inner"><span class="settings_item-name item__sub">Определение типа подключения.</span>
+			<div class="settings_item item__settings-section">
+				<div class="warning-sign"></div><span class="fail-message">Не удалось определить <br> тип подключения</span>
+			</div><a id="fail-repeat" href="javascript:void(0)" class="button button__ghost">Повторить</a>
+		</div>
+	</div>
+</section>
+<footer class="section-footer settings_section-fail"><span class="section-footer_buttons"><a id="fail-prev" href="javascript:void(0)" class="button button__cherry button__prev">Назад</a><a id="fail-manual" href="javascript: void(0)" class="button button__cherry button__next">Настроить вручную</a></span>
+</footer>
+<section class="settings_section settings_section-manual">
+	<div class="settings_section__wrapper">
+		<div class="settings_item settings-wrapper-inner"><span class="settings_item-name item__sub"><b>ШАГ 1/4</b>Выберите тип подключения к сети интернет</span>
+			<div class="settings_item item__settings-section">
+				<div class="internet_item internet_item__connect-type"><span class="internet_item-name">Тип соединения</span>
+					<div class="internet_item-value">
+						<div class="itempick">
+							<div class="itempick_holder items-3">
+								<input type="radio" id="settings-manual-ethernet" name="settings-manual-interface" checked="checked" class="itempick_radio" />
+								<label for="settings-manual-ethernet" class="itempick_label"><span class="itempick_value">Ethernet</span>
+								</label>
+								<input type="radio" id="settings-manual-adsl" name="settings-manual-interface" class="itempick_radio" />
+								<label for="settings-manual-adsl" class="itempick_label"><span class="itempick_value">ADSL</span>
+								</label>
+								<input type="radio" id="settings-manual-3g" name="settings-manual-interface" class="itempick_radio" />
+								<label for="settings-manual-3g" class="itempick_label"><span class="itempick_value">3G/4G</span>
+								</label><b class="itempick_slider"></b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="internet_item settings_item__connect-type__second settings__ethernet"><span class="internet_item-name">Тип подключения</span>
+					<div class="internet_item-value">
+						<div class="itempick">
+							<div class="itempick_holder items-4">
+								<input type="radio" id="settings-conntype-dhcp" name="settings-conntype-manual" checked="checked" class="itempick_radio" />
+								<label for="settings-conntype-dhcp" class="itempick_label"><span class="itempick_value">DHCP</span>
+								</label>
+								<input type="radio" id="settings-conntype-static" name="settings-conntype-manual" class="itempick_radio" />
+								<label for="settings-conntype-static" class="itempick_label"><span class="itempick_value">Static IP</span>
+								</label>
+								<input type="radio" id="settings-conntype-pppoe" name="settings-conntype-manual" class="itempick_radio" />
+								<label for="settings-conntype-pppoe" class="itempick_label"><span class="itempick_value">PPPoE</span>
+								</label>
+								<input type="radio" id="settings-conntype-pptp" name="settings-conntype-manual" class="itempick_radio" />
+								<label for="settings-conntype-pptp" class="itempick_label"><span class="itempick_value">PPtP/L2TP</span>
+								</label><b class="itempick_slider"></b>
+							</div>
+						</div>
+					</div>
+					<div class="hidden-options hidden-options__connect-type-internet">
+						<div class="internet_item internet_item__static-ip">
+							<div class="internet_item"><span class="internet_item-name sub-item">IP адрес</span>
+								<div class="internet_item-value">
+									<input type="text" class="input-text input-text__ip-mask" />
+								</div>
+							</div>
+							<div class="internet_item"><span class="internet_item-name sub-item">Маска подсети</span>
+								<div class="internet_item-value">
+									<input type="text" class="input-text input-text__ip-mask" />
+								</div>
+							</div>
+							<div class="internet_item"><span class="internet_item-name sub-item">Основной шлюз</span>
+								<div class="internet_item-value">
+									<input type="text" class="input-text input-text__ip-mask" />
+								</div>
+							</div>
+						</div>
+						<div class="internet_item internet_item__pppoe">
+							<div class="internet_item"><span class="internet_item-name sub-item">Имя пользователя</span>
+								<div class="internet_item-value">
+									<input type="text" class="input-text" />
+								</div>
+							</div>
+							<div class="internet_item"><span class="internet_item-name sub-item">Пароль</span>
+								<div class="internet_item-value">
+									<input type="password" class="input-text" />
+								</div>
+							</div>
+							<div class="internet_item"><span class="internet_item-name sub-item">Имя сервиса</span>
+								<div class="internet_item-value">
+									<input type="text" class="input-text" />
+								</div>
+							</div>
+						</div>
+						<div class="internet_item internet_item__pptp">
+							<div class="internet_item"><span class="internet_item-name sub-item">Имя пользователя</span>
+								<div class="internet_item-value">
+									<input type="text" class="input-text" />
+								</div>
+							</div>
+							<div class="internet_item"><span class="internet_item-name sub-item">Пароль</span>
+								<div class="internet_item-value">
+									<input type="password" class="input-text" />
+								</div>
+							</div>
+							<div class="internet_item"><span class="internet_item-name sub-item"><span class="internet_item-name__fix">IP адрес / <br> Доменное имя сервера</span></span>
+								<div class="internet_item-value">
+									<input type="text" class="input-text" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="internet_item settings_item__vpi settings__adsl">
+					<div class="internet_item"><span class="internet_item-name">VPI</span>
+						<input type="text" id="vpi" maxlength="3" class="input-text" />
+						<label for="vpi" value="0" class="input-text_label">(0-255)</label>
+					</div>
+					<div class="internet_item settings_item__vci"><span class="internet_item-name">VCI</span>
+						<input type="text" id="vci" maxlength="5" class="input-text" />
+						<label for="vci" value="33" class="input-text_label">(32-65535)</label>
+					</div>
+				</div>
+				<div class="internet_item settings_item__dns-mode settings__ethernet"><span class="internet_item-name">Режим DNS</span>
+					<div class="internet_item-value">
+						<div class="itempick">
+							<div class="itempick_holder items-2">
+								<input type="radio" id="settings-dns-auto" name="settings-dns_mode" checked="checked" class="itempick_radio" />
+								<label for="settings-dns-auto" class="itempick_label"><span class="itempick_value">Авто определение</span>
+								</label>
+								<input type="radio" id="settings-dns-manual" name="settings-dns_mode" class="itempick_radio" />
+								<label for="settings-dns-manual" class="itempick_label"><span class="itempick_value">Вручную</span>
+								</label><b class="itempick_slider"></b>
+							</div>
+						</div>
+					</div>
+					<div class="settings-dnsmode-options">
+						<div class="internet_item settings_item__primary-dns"><span class="internet_item-name">Предпочитаемый DNS</span>
+							<div class="internet_item-value"><span class="input-field"><input type="text" placeholder="192.168.1.1" id="settings-primary-dns" class="input-text"/></span>
+							</div>
+						</div>
+						<div class="internet_item settings_item__secondary-dns"><span class="internet_item-name">Альтернативный DNS</span>
+							<div class="internet_item-value"><span class="input-field"><input type="text" id="settings-alternate-dns" class="input-text"/></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="internet_item settings_item__vlan"><span class="internet_item-name">VLAN</span>
+					<input type="checkbox" id="settings-vlan-status" checked="" maxlength="4" class="checkbox-small" />
+					<label for="settings-vlan-status" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+					</label>
+					<div class="settings-vlan-options">
+						<div class="extend-item_holder"><span class="internet_item-name">VLAN ID</span>
+							<input type="text" id="settings-vlan-id" maxlength="4" class="input-text" />
+							<label for="settings-vlan-id" class="input-text_label">(0-4095)</label>
+						</div>
+					</div>
+				</div>
+				<div class="settings__modem">
+					<div class="settings_item__modem">
+						<div class="usb_item settings_item__modem-switch"><span class="usb_item-name">3G/4G модем</span>
+							<input type="checkbox" id="modem-switch" checked="checked" class="checkbox-small" />
+							<label for="modem-switch" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+							</label>
+						</div>
+						<div class="usb_item settings_item__modem-buttons"><span class="settings_item-name settings_item-name__empty"></span>
+							<button type="button" class="button button__ghost button__eject">Извлечь</button>
+							<button type="button" class="button button__ghost button__refresh">Обновить</button>
+						</div>
+					</div>
+					<div class="internet_item usb-model"><span class="internet_item-name item__sub">Модель USB-адаптера</span>
+						<div class="internet_item-value">
+							<div role="select" class="jelect">
+								<input id="settings-usb-model" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input" />
+								<div tabindex="0" role="button" class="jelect-current">Выберите</div>
+								<ul class="jelect-options">
+									<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">1</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="internet_item settings-location"><span class="internet_item-name item__sub">Ваше местоположение</span>
+						<div class="internet_item-value">
+							<div role="select" class="jelect">
+								<input id="settings-location" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input" />
+								<div tabindex="0" role="button" class="jelect-current">Выберите</div>
+								<ul class="jelect-options">
+									<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">1</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="internet_item settings-operator"><span class="internet_item-name item__sub">Оператор</span>
+						<div class="internet_item-value">
+							<div role="select" class="jelect">
+								<input id="settings-operator" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input" />
+								<div tabindex="0" role="button" class="jelect-current">Выберите</div>
+								<ul class="jelect-options">
+									<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">1</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">2</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="internet_item item__settings-network">
+						<div class="internet_item-name item__sub">Сеть</div>
+						<div class="internet_item-value internet_item__help">
+							<div class="itempick">
+								<div class="itempick_holder items-3">
+									<input type="radio" id="settings-network-auto" name="settings-network" checked="checked" class="itempick_radio" />
+									<label for="settings-network-auto" class="itempick_label"><span class="itempick_value">Auto</span>
+									</label>
+									<input type="radio" id="settings-network-3g" name="settings-network" class="itempick_radio" />
+									<label for="settings-network-3g" class="itempick_label"><span class="itempick_value">3G</span>
+									</label>
+									<input type="radio" id="settings-network-4g" name="settings-network" class="itempick_radio" />
+									<label for="settings-network-4g" class="itempick_label"><span class="itempick_value">4G</span>
+									</label><b class="itempick_slider"></b>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="internet_item item__settings-apn"><span class="internet_item-name item__sub">APN</span>
+						<input type="text" placeholder="" class="input-text" />
+					</div>
+					<div class="internet_item item__settings-dial"><span class="internet_item-name item__sub">Dial number</span>
+						<input type="text" placeholder="" class="input-text" />
+					</div>
+					<div class="internet_item item__settings-pin"><span class="internet_item-name item__sub">PIN код</span>
+						<input type="text" placeholder="" class="input-text" />
+					</div>
+					<div class="internet_item item__settings-username"><span class="internet_item-name item__sub">Имя пользователя</span>
+						<input type="text" placeholder="" class="input-text" />
+					</div>
+					<div class="internet_item item__settings-password"><span class="internet_item-name item__sub">Пароль</span>
+						<input type="password" placeholder="" class="input-text" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="section-footer settings_section-manual"><span class="section-footer_buttons"><a id="manual-prev" href="javascript:void(0)" class="button button__cherry button__prev">Назад</a><a id="manual-next" href="javascript: void(0)" class="button button__cherry button__next">Далее</a></span>
+</footer>
+<section class="settings_section settings_section-wifi">
+	<div class="settings_section__wrapper">
+		<div class="settings_item settings-wrapper-inner"><span class="settings_item-name item__sub"><b>ШАГ 2/4</b>Беспроводная сеть Wi-Fi</span>
+			<div class="settings_item item__settings-section">
+				<div class="internet_item internet_item__connect-type"><span class="internet_item-name">Частота</span>
+					<div class="internet_item-value internet_item__help">
+						<div class="itempick">
+							<div class="itempick_holder items-2">
+								<input type="radio" id="settings-frequency5" name="settings-frequency" checked="checked" class="itempick_radio" />
+								<label for="settings-frequency5" class="itempick_label"><span class="itempick_value">5ГГц</span>
+								</label>
+								<input type="radio" id="settings-frequency24" name="settings-frequency" class="itempick_radio" />
+								<label for="settings-frequency24" class="itempick_label"><span class="itempick_value">2,4 ГГц</span>
+								</label><b class="itempick_slider"></b>
+							</div>
+						</div>
+						<a href="javascript: void(0)" data-definition-name="iptv" class="item-help"></a>
+					</div>
+				</div>
+				<div class="internet_item item__settings-ssid"><span class="internet_item-name item__sub">Имя сети (SSID)</span>
+					<input type="text" spellcheck="false" value="Qnity 4000" class="input-text" />
+				</div>
+				<div class="internet_item access-settings"><span class="internet_item-name">Доступ к сети</span>
+					<div class="internet_item-value internet_item__help">
+						<div class="itempick settings-wifi-access">
+							<div class="itempick_holder items-2">
+								<input type="radio" id="settings-wifi-open" name="settings-wifi-access" checked="" class="itempick_radio" />
+								<label for="settings-wifi-open" class="itempick_label"><span class="itempick_value">Открытая сеть</span>
+								</label>
+								<input type="radio" id="settings-wifi-closed" name="settings-wifi-access" class="itempick_radio" />
+								<label for="settings-wifi-closed" class="itempick_label"><span class="itempick_value">Закрытая сеть</span>
+								</label><b class="itempick_slider"></b>
+							</div>
+						</div>
+						<a href="javascript: void(0)" data-definition-name="iptv" class="item-help"></a>
+					</div>
+					<div class="settings-wifi-options">
+						<div class="extend-item_holder"><span class="internet_item-name">Тип шифрования</span>
+							<div role="select" class="jelect">
+								<input id="encryption-type" name="tool" value="0" data-text="Выберите" type="text" class="jelect-input" />
+								<div tabindex="0" role="button" class="jelect-current">Выберите</div>
+								<ul class="jelect-options">
+									<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">WPA-PSK</li>
+									<li data-val="1" tabindex="0" role="option" class="jelect-option">WPA2-PSK</li>
+								</ul>
+							</div>
+						</div>
+						<div class="extend-item_holder"><span class="internet_item-name">Пароль</span>
+							<div class="internet_item-value">
+								<input type="password" class="input-text" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="section-footer settings_section-wifi"><span class="section-footer_buttons"><a id="wifi-prev" href="javascript:void(0)" class="button button__cherry button__prev">Назад</a><a id="wifi-next" href="javascript: void(0)" class="button button__cherry button__next">Далее</a></span>
+</footer>
+<section class="settings_section settings_section-timezone">
+	<div class="settings_section__wrapper">
+		<div class="settings_item settings-wrapper-inner"><span class="settings_item-name item__sub"><b>ШАГ 3/4</b>Выберите ваш часовой пояс</span>
+			<div class="settings_item item__settings-section timezone-jelect"><span class="internet_item-name">Часовой пояс</span>
+				<div role="select" class="jelect">
+					<input id="provider-pick" name="tool" value="0" data-text="" type="text" class="jelect-input" />
+					<div tabindex="0" role="button" class="jelect-current">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</div>
+					<ul class="jelect-options">
+						<li data-val="0" tabindex="0" role="option" class="jelect-option jelect-option_state_active">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+						<li data-val="1" tabindex="0" role="option" class="jelect-option">(GMT+04:00) Москва, Санкт-Петербург, Волгоград</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="section-footer settings_section-timezone"><span class="section-footer_buttons"><a id="timezone-prev" href="javascript:void(0)" class="button button__cherry button__prev">Назад</a><a id="timezone-next" href="javascript: void(0)" class="button button__cherry button__next">Далее</a></span>
+</footer>
+<section class="settings_section settings_section-password">
+	<div class="settings_section__wrapper">
+		<div class="settings_item settings-wrapper-inner"><span class="settings_item-name item__sub"><b>ШАГ 4/4</b>Установка пароля</span>
+			<div class="settings_item item__settings-section"><span class="internet_item-name settings-password-default">Использовать <br> пароль по умолчанию</span>
+				<input type="checkbox" id="settings-default-password" checked="" class="checkbox-small" />
+				<label for="settings-default-password" class="checkbox-small_label flipswitch-fade"><span class="checkbox-small_value"></span><span class="checkbox-small_slider"></span>
+				</label>
+				<div class="settings-password__inputs">
+					<div class="settings-password-input"><span class="internet_item-name">Старый пароль</span>
+						<input type="password" class="input-text" /><span class="settings-password-warning">Для предотвращения несанкционированного доступа на ваше устройство рекомендуется сменить пароль по умолчанию.</span>
+					</div>
+					<div class="settings-password-input"><span class="internet_item-name">Новый пароль</span>
+						<input type="password" class="input-text" />
+					</div>
+					<div class="settings-password-input"><span class="internet_item-name">Подтвердите <br> новый пароль</span>
+						<input type="password" class="input-text" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="section-footer settings_section-password"><span class="section-footer_buttons"><a id="password-prev" href="javascript:void(0)" class="button button__cherry button__prev">Назад</a><a id="password-next" href="javascript: void(0)" class="button button__cherry button__next">Завершить</a></span>
+</footer>

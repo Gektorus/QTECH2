@@ -1,0 +1,385 @@
+.header {
+	position: fixed
+	top 0
+	left 0
+	z-index 9
+	height 68px
+	width 100%
+	background: rgba(42, 30, 20, 0.85);
+	color rgba(255, 255, 255, .5)
+	min-width 1024px
+}
+
+
+.header_holder {
+	float right
+	padding-left 45px
+	height 100%
+}
+
+.header_item {
+	float left
+	height: 100%
+	padding: 0 10px
+	line-height 68px
+	font-size 18px
+
+	&__date {
+		padding-top: 4px
+		margin-right -2px
+		font-size: 15px;
+		font-family: "Roboto";
+
+		&:after {
+			content '|'
+			display inline-block
+			padding-left 20px
+			color #504136
+		}
+	}
+
+	&__time {
+		padding-top: 4px
+		font-size: 15px;
+		font-family: "Roboto";
+	}
+
+	&__connection {
+		font-size: 14px
+		padding-left 50px
+		position relative
+		color rgba(68, 196, 216, .5)
+		text-shadow 0 0 2px rgba(68, 196, 216, .5)
+		margin-right: 26px;
+		line-height: 74px;
+
+		&:after {
+			content: ''
+			position absolute
+			background: url("../images/sprite.png") no-repeat;
+			top: 50%
+			margin-top -17px
+			left: 0
+			background-position: -99px -73px;
+			background-size: 246px;
+			width: 38px;
+			height: 35px;
+		}
+	}
+
+	&__frequency {
+		@extend .header_item__connection
+		padding-left 39px
+		letter-spacing: -0.5px;
+		margin-right: 33px;
+		line-height: 74px;
+
+		&:after {
+			@extend .header_item__connection:after
+			margin-top: -16px;
+			width: 39px;
+			height: 34px;
+			background-position: -177px 0;
+		}
+	}
+
+	&__language {
+		padding 0
+		border-left 2.5px solid #504136
+		text-align: left;
+		.jelect {
+			width 147px
+			background-color transparent
+			.jelect-current {
+			padding: 0 58px 0 32px;
+			line-height 68px
+			transition background-color .3s
+			letter-spacing: -0.5px;
+			font-size: 14px;
+
+			&:after {
+				top: -2px;
+				right: 32px;
+			}
+
+			&:hover {
+				background-color rgba(255,255,255,.15)
+			}
+		}
+		}
+
+
+		.jelect_state_active .jelect-options {
+			display block
+		}
+
+		.jelect_state_active .jelect-current {
+			overflow: visible
+		}
+	}
+
+	&__usb {
+		margin-right 0
+		padding-left 40px
+		position relative
+		&:after {
+			margin-left -19px
+		}
+		&:hover {
+			cursor pointer
+			&:after {
+				opacity 1
+			}
+		}
+
+
+		&:after {
+			@extend .header_item__connection:after
+			height: 31px
+			width: 26px;
+			background-position: -126px -182px;
+			background-size: 244px;
+			margin-top -12px
+			opacity .7;
+			transition: opacity .2s;
+		}
+	}
+
+	&__print {
+		margin-right 10px
+		padding-left 40px
+		position relative
+		left: 2px;
+
+		&:after {
+			margin-left -2px
+		}
+		&:hover {
+			cursor pointer
+			&:after {
+				opacity 1
+			}
+		}
+
+		&:after {
+			@extend .header_item__connection:after
+			margin-top -13px
+			opacity .7;
+			transition: opacity .2s;
+			background-size: 244px;
+			width: 31px;
+			height: 28px;
+			background-position: -174px -182px;
+		}
+	}
+
+	&__restart, &__exit {
+		letter-spacing: -0.6px;
+		padding: 0 30px 0 70px
+		transition background-color .4s
+		color inherit
+		text-decoration none
+		border-left 2.5px solid #504136
+		position relative
+		font-size: 14px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			margin-top: -13.5px;
+			width: 25px;
+			height: 28px;
+			background: url("../images/sprite.png") no-repeat;
+			background-size: 245px;
+		}
+
+		&:hover{
+			background-color: rgba(255,255,255,.15);
+		}
+	}
+
+	&__exit {
+		padding-left: 73px;
+		span {
+			position: relative;
+			left: -6px;
+		}
+		&:before {
+			width 29px
+			height: 21px;
+			background-position: -217px 0;
+			margin-top: -11.5px
+			left: 31px;
+		}
+	}
+
+	&__restart {
+		padding: 0 37px 0 67px;
+
+		&:before {
+			left: 34px;
+			background-position: 1px -186px;
+		}
+	}
+}
+
+.IE {
+	.header_item__print {
+	  top: 0px
+	  left: 0px
+	}
+
+	.header_item {
+		height: 68px
+	}
+}
+
+.hidden__item {
+	position relative
+
+	&:hover {
+		.header_item-hidden {
+			left: 50%;
+			top: 100%;
+			opacity 1;
+			transform: scale(1)
+		}
+	}
+}
+
+.header_item-hidden {
+	position absolute
+	top: 120%;
+	left: -9999px;
+	margin-left: -37.5px;
+	background-color: rgba(255,255,255,.8);
+	padding: 10px;
+	border-radius: 2px;
+	color: #ad979a;
+	text-shadow: 0 0 1px rgba(0,0,0,.4);
+	line-height normal
+	width: 125px
+	margin-left: -62.5px;
+	text-shadow none
+	font-size: 16px
+	opacity 0;
+	transition: opacity .3s, top .4s;
+	transform: scale(1.01)
+	box-shadow -1px 1px 1px rgba(0,0,0,.3)
+
+	&__big {
+		box-sizing: border-box;
+		padding-left: 21px;
+		padding-top: 13px;
+		height: 117px;
+		line-height: 13px;
+		letter-spacing: -0.5px;
+		width: 223px;
+
+		& {
+			margin-left: -107.5px
+		}
+	}
+
+	&:after {
+		content ''
+		position absolute
+		top: -7px;
+		left: 50%
+		margin-left: -5.5px
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 5.5px 7px 5.5px;
+		border-color: transparent transparent  rgba(255,255,255,.8) transparent;
+	}
+}
+
+.item-hidden {
+	&_row {
+		padding: 5px 0;
+		text-align: left;
+
+		&.row__block {
+			.item-hidden_value {
+				display block
+				padding-left 0
+			}
+		}
+	}
+	&_value {
+		padding-left 5px;
+		font-weight: bold
+		&__connect {
+			color: #48c6dc;
+			text-shadow: 0 0 1px #48c6dc8
+			.connect-item:after {
+				content: '...'
+				padding-left 3px
+				letter-spacing 1px
+			}
+		}
+	}
+}
+
+.signal {
+	display inline-block
+	width: 3px
+	height: 14px;
+	background-color: #d1b7b8;
+	box-shadow: 0 0 1px #d1b7b8
+	margin-left 3px
+
+	&__active {
+		background-color: #48c6dc;
+		box-shadow: 0 0 2px #48c6dc;
+		animation: shadowPuls 4s infinite
+	}
+}
+
+.header_holder__first-section,
+.header_holder__second-section {
+	float left
+}
+
+
+// margin fixes
+.item-hidden__usb {
+	margin-left: -95.5px;
+	box-sizing: border-box;
+	padding-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.item-hidden__print {
+	margin-left: -74.5px;
+	padding-top: 4px;
+	padding-left: 18px;
+	box-sizing: border-box;
+	line-height: 17px;
+	font-size: 14px;
+	padding-bottom: 6px;
+}
+
+
+// icons replace then menu break
+.header_holder {
+	width: 100%;
+	text-align: center;
+}
+.header_holder__first-section {
+	transform: translateX(30px);
+}
+.header_holder__second-section {
+	float: none;
+	display: inline-block;
+}
+.header_holder__third-section {
+	float right
+}
+
+// /icons replace then menu break
